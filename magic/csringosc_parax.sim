@@ -1,0 +1,102 @@
+| units: 0.5 tech: gf180mcuD format: MIT
+x vbiasn VSS a_3260_240# VSS s=26400,680 d=5200,230 l=60 w=120 x=3200 y=240 nfet_03v3
+x vbiasp VCC a_1400_580# VCC s=132000,1640 d=18200,670 l=60 w=600 x=1340 y=580 pfet_03v3
+x x4.A a_3260_580# x5.A VCC s=18200,670 d=32000,840 l=80 w=320 x=3330 y=720 pfet_03v3
+x vin vbiasp a_n2674_1338# VSS s=52000,1104 d=52000,1104 l=140 w=1000 x=-1725 y=190 nfet_03v3
+x osc_raw a_1400_240# x2.A VSS s=5200,230 d=16000,520 l=80 w=160 x=1470 y=240 nfet_03v3
+x vin a_n2674_1338# vbiasp VSS s=88000,2176 d=52000,1104 l=140 w=1000 x=-1969 y=190 nfet_03v3
+x a_n2674_338# a_n2674_1338# a_n2954_216# VSS s=24400,644 d=24400,644 l=1000 w=200 x=-2673 y=338 ppolyf_u_1k
+x vbiasp VCC a_2640_580# VCC s=132000,1640 d=18200,670 l=60 w=600 x=2580 y=580 pfet_03v3
+x vbiasn VSS a_1400_240# VSS s=26400,680 d=5200,230 l=60 w=120 x=1340 y=240 nfet_03v3
+x osc_raw VSS x7.A VSS s=32000,800 d=20800,608 l=56 w=200 x=4390 y=240 nfet_03v3
+x osc_raw a_1400_580# x2.A VCC s=18200,670 d=32000,840 l=80 w=320 x=1470 y=720 pfet_03v3
+x vbiasn VSS a_2640_240# VSS s=26400,680 d=5200,230 l=60 w=120 x=2580 y=240 nfet_03v3
+x vin vbiasp a_n2674_1338# VSS s=52000,1104 d=88000,2176 l=140 w=1000 x=-749 y=190 nfet_03v3
+x vbiasn vbiasn VSS VSS s=12000,440 d=12000,440 l=60 w=120 x=650 y=350 nfet_03v3
+x vin a_n2674_1338# vbiasp VSS s=52000,1104 d=52000,1104 l=140 w=1000 x=-993 y=190 nfet_03v3
+x x7.A VCC osc_out VCC s=80000,1200 d=41600,1008 l=56 w=400 x=4810 y=640 pfet_03v3
+x x3.A a_2640_240# x4.A VSS s=5200,230 d=16000,520 l=80 w=160 x=2710 y=240 nfet_03v3
+x x2.A a_2020_240# x3.A VSS s=5200,230 d=16000,520 l=80 w=160 x=2090 y=240 nfet_03v3
+x vbiasp VCC a_3880_580# VCC s=132000,1640 d=18200,670 l=60 w=600 x=3820 y=580 pfet_03v3
+x x3.A a_2640_580# x4.A VCC s=18200,670 d=32000,840 l=80 w=320 x=2710 y=720 pfet_03v3
+x x2.A a_2020_580# x3.A VCC s=18200,670 d=32000,840 l=80 w=320 x=2090 y=720 pfet_03v3
+x x5.A a_3880_240# osc_raw VSS s=5200,230 d=16000,520 l=80 w=160 x=3950 y=240 nfet_03v3
+x vin vbiasp a_n2674_1338# VSS s=52000,1104 d=52000,1104 l=140 w=1000 x=-1237 y=190 nfet_03v3
+x vin a_n2674_1338# vbiasp VSS s=52000,1104 d=52000,1104 l=140 w=1000 x=-1481 y=190 nfet_03v3
+x vbiasn VSS a_3880_240# VSS s=26400,680 d=5200,230 l=60 w=120 x=3820 y=240 nfet_03v3
+x x7.A VSS osc_out VSS s=32000,800 d=20800,608 l=56 w=200 x=4810 y=240 nfet_03v3
+x vbiasp VCC a_2020_580# VCC s=132000,1640 d=18200,670 l=60 w=600 x=1960 y=580 pfet_03v3
+x x5.A a_3880_580# osc_raw VCC s=18200,670 d=32000,840 l=80 w=320 x=3950 y=720 pfet_03v3
+x a_n2954_338# VSS a_n2954_216# VSS s=24400,644 d=24400,644 l=1000 w=200 x=-2953 y=338 ppolyf_u_1k
+x vbiasp VCC vbiasn VCC s=47600,924 d=60000,1400 l=60 w=600 x=120 y=220 pfet_03v3
+x vbiasp vbiasp VCC VCC s=80000,1800 d=47600,924 l=56 w=800 x=-59 y=220 pfet_03v3
+x vbiasn VSS a_2020_240# VSS s=26400,680 d=5200,230 l=60 w=120 x=1960 y=240 nfet_03v3
+x vbiasp VCC a_3260_580# VCC s=132000,1640 d=18200,670 l=60 w=600 x=3200 y=580 pfet_03v3
+x osc_raw VCC x7.A VCC s=80000,1200 d=41600,1008 l=56 w=400 x=4390 y=640 pfet_03v3
+x x4.A a_3260_240# x5.A VSS s=5200,230 d=16000,520 l=80 w=160 x=3330 y=240 nfet_03v3
+C a_n2674_1338# vbiasp 2.8
+C VCC vbiasp 4.7
+R osc_out 40
+= osc_out x7.Y
+R osc_raw 252
+= osc_raw x1.A
+= osc_raw x5.Y
+= osc_raw x6.A
+C vbiasn0 5.2
+R vbiasn 443
+= vbiasn x1.VbiasN
+= vbiasn x2.VbiasN
+= vbiasn x3.VbiasN
+= vbiasn x4.VbiasN
+= vbiasn x5.VbiasN
+C vbiasp0 2.8
+R vbiasp 1088
+= vbiasp x1.VbiasP
+= vbiasp x2.VbiasP
+= vbiasp x3.VbiasP
+= vbiasp x4.VbiasP
+= vbiasp x5.VbiasP
+C vin0 4.0
+R vin 457
+C VCC0 12.7
+R VCC 10218
+= VCC x1.VCC
+= VCC x2.VCC
+= VCC x3.VCC
+= VCC x4.VCC
+= VCC x5.VCC
+= VCC x6.VCC
+= VCC x7.VCC
+R VSS 1490
+= VSS x1.VSS
+= VSS x2.VSS
+= VSS x3.VSS
+= VSS x4.VSS
+= VSS x5.VSS
+= VSS x6.VSS
+= VSS x7.VSS
+R a_3880_240# 17
+R a_3260_240# 17
+R a_2640_240# 17
+R a_2020_240# 17
+R a_1400_240# 17
+R x7.A 159
+= x7.A x6.Y
+R a_3880_580# 72
+R x5.A 118
+= x5.A x4.Y
+R a_3260_580# 72
+R x4.A 118
+= x4.A x3.Y
+R a_2640_580# 72
+R x3.A 118
+= x3.A x2.Y
+R a_2020_580# 72
+R x2.A 118
+= x2.A x1.Y
+R a_1400_580# 72
+R a_n2674_338# 5000
+C a_n2674_1338#0 2.8
+R a_n2674_1338# 322
+R a_n2954_216# 47
+R a_n2954_338# 5000

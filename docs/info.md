@@ -1,20 +1,20 @@
-<!---
-
-This file is used to generate your project datasheet. Please fill in the information below and delete any unused
-sections.
-
-You can also include images in this folder and reference them in the markdown. Each image must be less than
-512 kb in size, and the combined size of all images must be less than 1 MB.
--->
-
 ## How it works
 
-Explain how your project works
+This is a simple VCO experiment using a current-starved ring oscillator.
+
+For a given input voltage (`vin`) in the range 0.55V to 3.3V, the oscillator output (`vout`) is expected to be a square wave roughly in the range of 3MHz to 600MHz.
+
+NOTE: `d_osc_out` should also show the oscillator output, but as a digital-only path (instead of analog) through the TT digital mux.
+
 
 ## How to test
 
-Explain how to use your project
+*   Apply power with `vin` held at 0V, and expect to see no oscillation on `vout`.
+*   Raise `vin` to 0.55V, and you _might_ see `vout` oscillating at about 3MHz, 3.3Vpp, 50% duty cycle.
+*   Raise `vin` slowly and if `vout` wasn't already oscillating then you should see it start at least by the time `vin` reaches 0.65V (if not sooner), and as you raise `vin` further the frequency at `vout` should rapidly increase.
+
 
 ## External hardware
 
-List external hardware used in your project (e.g. PMOD, LED display, etc), if any
+*   Precision variable voltage source for `vin`.
+*   Oscilloscope to monitor `vout`.
