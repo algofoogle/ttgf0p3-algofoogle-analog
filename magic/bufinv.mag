@@ -1,7 +1,7 @@
 magic
 tech gf180mcuD
 magscale 1 5
-timestamp 1781357371
+timestamp 1781527629
 << nwell >>
 rect -15 270 235 640
 << nmos >>
@@ -33,9 +33,9 @@ rect 155 135 180 215
 rect 70 335 95 515
 rect 155 335 180 515
 << psubdiff >>
-rect 10 175 60 185
-rect 10 135 20 175
-rect 45 135 60 175
+rect 10 195 60 205
+rect 10 135 20 195
+rect 45 135 60 195
 rect 10 125 60 135
 << nsubdiff >>
 rect 10 515 60 525
@@ -43,7 +43,7 @@ rect 10 335 20 515
 rect 45 335 60 515
 rect 10 325 60 335
 << psubdiffcont >>
-rect 20 135 45 175
+rect 20 135 45 195
 << nsubdiffcont >>
 rect 20 335 45 515
 << polysilicon >>
@@ -75,10 +75,10 @@ rect 165 280 190 325
 rect 165 255 235 280
 rect 165 225 190 255
 rect 60 215 105 225
-rect 60 185 70 215
-rect 10 175 70 185
-rect 10 135 20 175
-rect 45 135 70 175
+rect 60 205 70 215
+rect 10 195 70 205
+rect 10 135 20 195
+rect 45 135 70 195
 rect 95 135 105 215
 rect 145 215 190 225
 rect 145 135 155 215

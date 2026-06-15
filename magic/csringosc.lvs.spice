@@ -15,7 +15,7 @@ X3 Y A a_280_590# VCC pfet_03v3 ad=0.8p pd=4.2u as=0.31652p ps=2.33043u w=1.6u l
 X0 Y A VCC VCC pfet_03v3 ad=1.04p pd=5.04u as=1p ps=5u w=2u l=0.28u
 **devattr s=80000,1200 d=41600,1008
 X1 Y A VSS VSS nfet_03v3 ad=0.52p pd=3.04u as=0.5p ps=3u w=1u l=0.28u
-**devattr s=32000,800 d=20800,608
+**devattr s=36000,800 d=20800,608
 .ends
 
 .subckt nfet_03v3_KT5AJW a_n52_n500# a_296_n592# a_680_n500# a_52_n592# a_n540_n500#
@@ -50,7 +50,7 @@ Xx6 osc_raw x7/A VSS VCC bufinv
 Xx7 x7/A osc_out VSS VCC bufinv
 XXMNc vbiasp vin m1_n2680_1360# vin vbiasp vin vin vin VSS vbiasp m1_n2680_1360# m1_n2680_1360#
 + vin m1_n2680_1360# nfet_03v3_KT5AJW
-XXR1a2 m1_n2960_210# m1_n2680_1360# m1_n2960_210# VSS VSS ppolyf_u_1k_ACAPAA
+XXR1a2 m1_n2960_160# m1_n2680_1360# m1_n2960_160# VSS VSS ppolyf_u_1k_ACAPAA
 X0 VSS vbiasn vbiasn VSS nfet_03v3 ad=0.3p pd=2.2u as=0.3p ps=2.2u w=0.6u l=0.3u
 **devattr s=12000,440 d=12000,440
 X1 vbiasn vbiasp VCC VCC pfet_03v3 ad=1.5p pd=7u as=1.02p ps=3.96u w=3u l=0.3u

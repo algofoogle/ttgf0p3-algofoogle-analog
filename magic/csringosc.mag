@@ -1,7 +1,7 @@
 magic
 tech gf180mcuD
 magscale 1 5
-timestamp 1781360530
+timestamp 1781528122
 << nwell >>
 rect -165 -10 205 690
 << pwell >>
@@ -50,14 +50,14 @@ rect 270 350 290 390
 rect 360 350 380 390
 rect 270 330 380 350
 << nsubdiff >>
-rect 15 635 100 645
-rect 15 550 25 635
-rect 90 550 100 635
-rect 15 540 100 550
+rect 70 635 155 645
+rect 70 550 80 635
+rect 145 550 155 635
+rect 70 540 155 550
 << psubdiffcont >>
 rect 290 350 360 390
 << nsubdiffcont >>
-rect 25 550 90 635
+rect 80 550 145 635
 << polysilicon >>
 rect -985 605 -305 641
 rect -105 560 -2 570
@@ -93,14 +93,16 @@ rect 295 120 330 155
 rect -95 60 -20 90
 rect 45 40 80 75
 << metal1 >>
-rect -1565 695 -1375 820
+rect -1565 780 -1060 835
+rect -1565 695 -1375 780
+rect -1195 760 -1060 780
 rect -1340 750 -1235 755
 rect -1340 685 -1335 750
 rect -1240 685 -1235 750
-rect -105 720 -45 725
 rect -1340 680 -1235 685
-rect -1480 105 -1235 140
-rect -1170 60 -1060 690
+rect -1480 80 -1235 145
+rect -1170 60 -1060 760
+rect -105 720 -45 725
 rect -105 670 -100 720
 rect -50 670 -45 720
 rect -972 609 -966 635
@@ -144,17 +146,19 @@ rect -300 365 -295 575
 rect -265 365 -260 575
 rect -300 360 -260 365
 rect -105 570 -45 670
-rect 25 635 90 850
+rect 25 635 160 850
 rect -105 560 -10 570
 rect -105 530 -95 560
 rect -20 530 -10 560
+rect 25 550 80 635
+rect 145 575 160 635
 rect 470 720 525 725
 rect 470 670 475 720
 rect 520 670 525 720
 rect 470 645 525 670
 rect 470 620 575 645
 rect 2070 620 2110 645
-rect 90 550 560 575
+rect 145 550 560 575
 rect 25 535 560 550
 rect -105 520 -10 530
 rect -105 500 -45 520
@@ -173,8 +177,8 @@ rect -420 110 -380 115
 rect -105 325 -70 500
 rect -105 115 -100 325
 rect -50 115 -45 120
-rect -1170 -40 -1165 60
-rect -1065 -40 -1060 60
+rect -1170 -65 -1165 60
+rect -1065 -65 -1060 60
 rect -105 100 -45 115
 rect 15 500 90 535
 rect 40 485 90 500
@@ -228,7 +232,7 @@ rect 660 70 665 175
 rect 545 65 665 70
 rect 285 -5 570 20
 rect 2070 -5 2110 20
-rect -1170 -45 -1060 -40
+rect -1170 -70 -1060 -65
 << via1 >>
 rect -1335 685 -1240 750
 rect -100 670 -50 720
@@ -249,7 +253,7 @@ rect -415 115 -385 325
 rect -100 120 -70 325
 rect -70 120 -50 325
 rect -100 115 -50 120
-rect -1165 -40 -1065 60
+rect -1165 -65 -1065 60
 rect 375 225 425 230
 rect 375 185 395 225
 rect 395 185 425 225
@@ -325,46 +329,46 @@ rect 370 70 550 175
 rect 660 70 665 175
 rect 370 65 665 70
 rect -1170 60 -1060 65
-rect -1170 -40 -1165 60
+rect -1170 -65 -1165 60
 rect -1065 10 -1060 60
-rect 370 10 465 65
-rect -1065 -40 465 10
-rect -1170 -45 465 -40
-rect 370 -105 465 -45
+rect 370 10 470 65
+rect -1065 -65 470 10
+rect -1170 -70 470 -65
+rect 370 -105 470 -70
 use csrostage  x1
-timestamp 1781243031
+timestamp 1781527629
 transform 1 0 560 0 1 -5
 box -15 0 310 650
 use csrostage  x2
-timestamp 1781243031
+timestamp 1781527629
 transform 1 0 870 0 1 -5
 box -15 0 310 650
 use csrostage  x3
-timestamp 1781243031
+timestamp 1781527629
 transform 1 0 1180 0 1 -5
 box -15 0 310 650
 use csrostage  x4
-timestamp 1781243031
+timestamp 1781527629
 transform 1 0 1490 0 1 -5
 box -15 0 310 650
 use csrostage  x5
-timestamp 1781243031
+timestamp 1781527629
 transform 1 0 1800 0 1 -5
 box -15 0 310 650
 use bufinv  x6
-timestamp 1781357371
+timestamp 1781527629
 transform 1 0 2085 0 1 -5
 box -15 70 235 640
 use bufinv  x7
-timestamp 1781357371
+timestamp 1781527629
 transform 1 0 2295 0 1 -5
 box -15 70 235 640
 use nfet_03v3_KT5AJW  XMNc
-timestamp 1781245240
+timestamp 1781528122
 transform 1 0 -645 0 1 345
 box -465 -355 465 355
 use ppolyf_u_1k_ACAPAA  XR1a2
-timestamp 1781245240
+timestamp 1781528122
 transform 1 0 -1357 0 1 419
 box -238 -429 238 429
 << labels >>
