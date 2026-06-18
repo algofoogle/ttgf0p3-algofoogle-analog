@@ -40,7 +40,8 @@
   "MAGIC_DEF_LABELS": 0,
   "MAGIC_WRITE_LEF_PINONLY": 1,
 
-  "//": "The lines below are borrowed from what tt-setup-tools generates in its default config_merged.json...",
+  "//": "Lines below borrowed from tt-setup-tools generated config_merged.json",
+  "//STD_CELL_LIBRARY": "gf180mcu_fd_sc_mcu9t5v0", "//": "Can modify for 9T instead of 7T cells. Remember to update lines below.",
   "VDD_PIN_VOLTAGE": 3.3,
   "LIB_SYNTH": "pdk_dir::libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__tt_025C_3v30.lib",
   "LIB_FASTEST": "pdk_dir::libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__ff_n40C_3v60.lib",
