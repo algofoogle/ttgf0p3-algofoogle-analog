@@ -59,6 +59,1162 @@ X2 VCC vbiasp vbiasp VCC pfet_03v3 ad=1.36p pd=5.28u as=2p ps=9u w=4u l=0.28u
 **devattr s=80000,1800 d=47600,924
 .ends
 
+.subckt gf180mcu_fd_sc_mcu7t5v0__fillcap_64 VDD VNW VPW VSS
+X0 a_4604_375# a_4516_472# VSS VPW nfet_05v0 ad=0.3608p pd=2.52u as=0.3608p ps=2.52u w=0.82u l=1u
+**devattr s=14432,504 d=14432,504
+X1 VDD a_572_375# a_484_472# VNW pfet_05v0 ad=0.5368p pd=3.32u as=0.5368p ps=3.32u w=1.22u l=1u
+**devattr s=21472,664 d=21472,664
+X2 VDD a_2364_375# a_2276_472# VNW pfet_05v0 ad=0.5368p pd=3.32u as=0.5368p ps=3.32u w=1.22u l=1u
+**devattr s=21472,664 d=21472,664
+X3 a_4156_375# a_4068_472# VSS VPW nfet_05v0 ad=0.3608p pd=2.52u as=0.3608p ps=2.52u w=0.82u l=1u
+**devattr s=14432,504 d=14432,504
+X4 a_5500_375# a_5412_472# VSS VPW nfet_05v0 ad=0.3608p pd=2.52u as=0.3608p ps=2.52u w=0.82u l=1u
+**devattr s=14432,504 d=14432,504
+X5 a_572_375# a_484_472# VSS VPW nfet_05v0 ad=0.3608p pd=2.52u as=0.3608p ps=2.52u w=0.82u l=1u
+**devattr s=14432,504 d=14432,504
+X6 VDD a_5052_375# a_4964_472# VNW pfet_05v0 ad=0.5368p pd=3.32u as=0.5368p ps=3.32u w=1.22u l=1u
+**devattr s=21472,664 d=21472,664
+X7 VDD a_6844_375# a_6756_472# VNW pfet_05v0 ad=0.5368p pd=3.32u as=0.5368p ps=3.32u w=1.22u l=1u
+**devattr s=21472,664 d=21472,664
+X8 VDD a_1916_375# a_1828_472# VNW pfet_05v0 ad=0.5368p pd=3.32u as=0.5368p ps=3.32u w=1.22u l=1u
+**devattr s=21472,664 d=21472,664
+X9 a_124_375# a_36_472# VSS VPW nfet_05v0 ad=0.3608p pd=2.52u as=0.3608p ps=2.52u w=0.82u l=1u
+**devattr s=14432,504 d=14432,504
+X10 a_5052_375# a_4964_472# VSS VPW nfet_05v0 ad=0.3608p pd=2.52u as=0.3608p ps=2.52u w=0.82u l=1u
+**devattr s=14432,504 d=14432,504
+X11 a_1916_375# a_1828_472# VSS VPW nfet_05v0 ad=0.3608p pd=2.52u as=0.3608p ps=2.52u w=0.82u l=1u
+**devattr s=14432,504 d=14432,504
+X12 VDD a_4604_375# a_4516_472# VNW pfet_05v0 ad=0.5368p pd=3.32u as=0.5368p ps=3.32u w=1.22u l=1u
+**devattr s=21472,664 d=21472,664
+X13 a_1468_375# a_1380_472# VSS VPW nfet_05v0 ad=0.3608p pd=2.52u as=0.3608p ps=2.52u w=0.82u l=1u
+**devattr s=14432,504 d=14432,504
+X14 a_2812_375# a_2724_472# VSS VPW nfet_05v0 ad=0.3608p pd=2.52u as=0.3608p ps=2.52u w=0.82u l=1u
+**devattr s=14432,504 d=14432,504
+X15 VDD a_3260_375# a_3172_472# VNW pfet_05v0 ad=0.5368p pd=3.32u as=0.5368p ps=3.32u w=1.22u l=1u
+**devattr s=21472,664 d=21472,664
+X16 a_2364_375# a_2276_472# VSS VPW nfet_05v0 ad=0.3608p pd=2.52u as=0.3608p ps=2.52u w=0.82u l=1u
+**devattr s=14432,504 d=14432,504
+X17 a_5948_375# a_5860_472# VSS VPW nfet_05v0 ad=0.3608p pd=2.52u as=0.3608p ps=2.52u w=0.82u l=1u
+**devattr s=14432,504 d=14432,504
+X18 VDD a_2812_375# a_2724_472# VNW pfet_05v0 ad=0.5368p pd=3.32u as=0.5368p ps=3.32u w=1.22u l=1u
+**devattr s=21472,664 d=21472,664
+X19 a_3260_375# a_3172_472# VSS VPW nfet_05v0 ad=0.3608p pd=2.52u as=0.3608p ps=2.52u w=0.82u l=1u
+**devattr s=14432,504 d=14432,504
+X20 VDD a_1020_375# a_932_472# VNW pfet_05v0 ad=0.5368p pd=3.32u as=0.5368p ps=3.32u w=1.22u l=1u
+**devattr s=21472,664 d=21472,664
+X21 VDD a_5500_375# a_5412_472# VNW pfet_05v0 ad=0.5368p pd=3.32u as=0.5368p ps=3.32u w=1.22u l=1u
+**devattr s=21472,664 d=21472,664
+X22 a_6844_375# a_6756_472# VSS VPW nfet_05v0 ad=0.3608p pd=2.52u as=0.3608p ps=2.52u w=0.82u l=1u
+**devattr s=14432,504 d=14432,504
+X23 a_6396_375# a_6308_472# VSS VPW nfet_05v0 ad=0.3608p pd=2.52u as=0.3608p ps=2.52u w=0.82u l=1u
+**devattr s=14432,504 d=14432,504
+X24 VDD a_6396_375# a_6308_472# VNW pfet_05v0 ad=0.5368p pd=3.32u as=0.5368p ps=3.32u w=1.22u l=1u
+**devattr s=21472,664 d=21472,664
+X25 VDD a_1468_375# a_1380_472# VNW pfet_05v0 ad=0.5368p pd=3.32u as=0.5368p ps=3.32u w=1.22u l=1u
+**devattr s=21472,664 d=21472,664
+X26 VDD a_4156_375# a_4068_472# VNW pfet_05v0 ad=0.5368p pd=3.32u as=0.5368p ps=3.32u w=1.22u l=1u
+**devattr s=21472,664 d=21472,664
+X27 VDD a_5948_375# a_5860_472# VNW pfet_05v0 ad=0.5368p pd=3.32u as=0.5368p ps=3.32u w=1.22u l=1u
+**devattr s=21472,664 d=21472,664
+X28 VDD a_124_375# a_36_472# VNW pfet_05v0 ad=0.5368p pd=3.32u as=0.5368p ps=3.32u w=1.22u l=1u
+**devattr s=21472,664 d=21472,664
+X29 a_3708_375# a_3620_472# VSS VPW nfet_05v0 ad=0.3608p pd=2.52u as=0.3608p ps=2.52u w=0.82u l=1u
+**devattr s=14432,504 d=14432,504
+X30 VDD a_3708_375# a_3620_472# VNW pfet_05v0 ad=0.5368p pd=3.32u as=0.5368p ps=3.32u w=1.22u l=1u
+**devattr s=21472,664 d=21472,664
+X31 a_1020_375# a_932_472# VSS VPW nfet_05v0 ad=0.3608p pd=2.52u as=0.3608p ps=2.52u w=0.82u l=1u
+**devattr s=14432,504 d=14432,504
+.ends
+
+.subckt gf180mcu_fd_sc_mcu7t5v0__fillcap_8 VDD VNW VPW VSS
+X0 VDD a_572_375# a_484_472# VNW pfet_05v0 ad=0.5368p pd=3.32u as=0.5368p ps=3.32u w=1.22u l=1u
+**devattr s=21472,664 d=21472,664
+X1 a_572_375# a_484_472# VSS VPW nfet_05v0 ad=0.3608p pd=2.52u as=0.3608p ps=2.52u w=0.82u l=1u
+**devattr s=14432,504 d=14432,504
+X2 a_124_375# a_36_472# VSS VPW nfet_05v0 ad=0.3608p pd=2.52u as=0.3608p ps=2.52u w=0.82u l=1u
+**devattr s=14432,504 d=14432,504
+X3 VDD a_124_375# a_36_472# VNW pfet_05v0 ad=0.5368p pd=3.32u as=0.5368p ps=3.32u w=1.22u l=1u
+**devattr s=21472,664 d=21472,664
+.ends
+
+.subckt gf180mcu_fd_sc_mcu7t5v0__fillcap_32 VDD VNW VPW VSS
+X0 VDD a_572_375# a_484_472# VNW pfet_05v0 ad=0.5368p pd=3.32u as=0.5368p ps=3.32u w=1.22u l=1u
+**devattr s=21472,664 d=21472,664
+X1 VDD a_2364_375# a_2276_472# VNW pfet_05v0 ad=0.5368p pd=3.32u as=0.5368p ps=3.32u w=1.22u l=1u
+**devattr s=21472,664 d=21472,664
+X2 a_572_375# a_484_472# VSS VPW nfet_05v0 ad=0.3608p pd=2.52u as=0.3608p ps=2.52u w=0.82u l=1u
+**devattr s=14432,504 d=14432,504
+X3 VDD a_1916_375# a_1828_472# VNW pfet_05v0 ad=0.5368p pd=3.32u as=0.5368p ps=3.32u w=1.22u l=1u
+**devattr s=21472,664 d=21472,664
+X4 a_124_375# a_36_472# VSS VPW nfet_05v0 ad=0.3608p pd=2.52u as=0.3608p ps=2.52u w=0.82u l=1u
+**devattr s=14432,504 d=14432,504
+X5 a_1916_375# a_1828_472# VSS VPW nfet_05v0 ad=0.3608p pd=2.52u as=0.3608p ps=2.52u w=0.82u l=1u
+**devattr s=14432,504 d=14432,504
+X6 a_1468_375# a_1380_472# VSS VPW nfet_05v0 ad=0.3608p pd=2.52u as=0.3608p ps=2.52u w=0.82u l=1u
+**devattr s=14432,504 d=14432,504
+X7 a_2812_375# a_2724_472# VSS VPW nfet_05v0 ad=0.3608p pd=2.52u as=0.3608p ps=2.52u w=0.82u l=1u
+**devattr s=14432,504 d=14432,504
+X8 VDD a_3260_375# a_3172_472# VNW pfet_05v0 ad=0.5368p pd=3.32u as=0.5368p ps=3.32u w=1.22u l=1u
+**devattr s=21472,664 d=21472,664
+X9 a_2364_375# a_2276_472# VSS VPW nfet_05v0 ad=0.3608p pd=2.52u as=0.3608p ps=2.52u w=0.82u l=1u
+**devattr s=14432,504 d=14432,504
+X10 VDD a_2812_375# a_2724_472# VNW pfet_05v0 ad=0.5368p pd=3.32u as=0.5368p ps=3.32u w=1.22u l=1u
+**devattr s=21472,664 d=21472,664
+X11 a_3260_375# a_3172_472# VSS VPW nfet_05v0 ad=0.3608p pd=2.52u as=0.3608p ps=2.52u w=0.82u l=1u
+**devattr s=14432,504 d=14432,504
+X12 VDD a_1020_375# a_932_472# VNW pfet_05v0 ad=0.5368p pd=3.32u as=0.5368p ps=3.32u w=1.22u l=1u
+**devattr s=21472,664 d=21472,664
+X13 VDD a_1468_375# a_1380_472# VNW pfet_05v0 ad=0.5368p pd=3.32u as=0.5368p ps=3.32u w=1.22u l=1u
+**devattr s=21472,664 d=21472,664
+X14 VDD a_124_375# a_36_472# VNW pfet_05v0 ad=0.5368p pd=3.32u as=0.5368p ps=3.32u w=1.22u l=1u
+**devattr s=21472,664 d=21472,664
+X15 a_1020_375# a_932_472# VSS VPW nfet_05v0 ad=0.3608p pd=2.52u as=0.3608p ps=2.52u w=0.82u l=1u
+**devattr s=14432,504 d=14432,504
+.ends
+
+.subckt gf180mcu_fd_sc_mcu7t5v0__fillcap_4 VDD VNW VPW VSS
+X0 a_124_375# a_36_472# VSS VPW nfet_05v0 ad=0.3608p pd=2.52u as=0.3608p ps=2.52u w=0.82u l=1u
+**devattr s=14432,504 d=14432,504
+X1 VDD a_124_375# a_36_472# VNW pfet_05v0 ad=0.5368p pd=3.32u as=0.5368p ps=3.32u w=1.22u l=1u
+**devattr s=21472,664 d=21472,664
+.ends
+
+.subckt gf180mcu_fd_sc_mcu7t5v0__buf_8 I Z VDD VNW VPW VSS
+X0 a_224_472# I VDD VNW pfet_05v0 ad=0.3782p pd=1.84u as=0.40463p ps=2.08667u w=1.22u l=0.5u
+**devattr s=15128,368 d=15128,368
+X1 Z a_224_472# VDD VNW pfet_05v0 ad=0.3782p pd=1.84u as=0.40463p ps=2.08667u w=1.22u l=0.5u
+**devattr s=15128,368 d=15128,368
+X2 a_224_472# I VSS VPW nfet_05v0 ad=0.2132p pd=1.34u as=0.2378p ps=1.53667u w=0.82u l=0.6u
+**devattr s=8528,268 d=8528,268
+X3 VSS a_224_472# Z VPW nfet_05v0 ad=0.2378p pd=1.53667u as=0.2132p ps=1.34u w=0.82u l=0.6u
+**devattr s=8528,268 d=14432,504
+X4 VDD a_224_472# Z VNW pfet_05v0 ad=0.40463p pd=2.08667u as=0.3782p ps=1.84u w=1.22u l=0.5u
+**devattr s=15128,368 d=15128,368
+X5 Z a_224_472# VDD VNW pfet_05v0 ad=0.3782p pd=1.84u as=0.40463p ps=2.08667u w=1.22u l=0.5u
+**devattr s=15128,368 d=15128,368
+X6 a_224_472# I VSS VPW nfet_05v0 ad=0.2132p pd=1.34u as=0.2378p ps=1.53667u w=0.82u l=0.6u
+**devattr s=14432,504 d=8528,268
+X7 Z a_224_472# VSS VPW nfet_05v0 ad=0.2132p pd=1.34u as=0.2378p ps=1.53667u w=0.82u l=0.6u
+**devattr s=8528,268 d=8528,268
+X8 VDD a_224_472# Z VNW pfet_05v0 ad=0.40463p pd=2.08667u as=0.3782p ps=1.84u w=1.22u l=0.5u
+**devattr s=15128,368 d=15128,368
+X9 Z a_224_472# VSS VPW nfet_05v0 ad=0.2132p pd=1.34u as=0.2378p ps=1.53667u w=0.82u l=0.6u
+**devattr s=8528,268 d=8528,268
+X10 Z a_224_472# VSS VPW nfet_05v0 ad=0.2132p pd=1.34u as=0.2378p ps=1.53667u w=0.82u l=0.6u
+**devattr s=8528,268 d=8528,268
+X11 VDD I a_224_472# VNW pfet_05v0 ad=0.40463p pd=2.08667u as=0.3782p ps=1.84u w=1.22u l=0.5u
+**devattr s=15128,368 d=15128,368
+X12 VDD a_224_472# Z VNW pfet_05v0 ad=0.40463p pd=2.08667u as=0.3782p ps=1.84u w=1.22u l=0.5u
+**devattr s=15128,368 d=15128,368
+X13 Z a_224_472# VDD VNW pfet_05v0 ad=0.3782p pd=1.84u as=0.40463p ps=2.08667u w=1.22u l=0.5u
+**devattr s=15128,368 d=15128,368
+X14 VSS a_224_472# Z VPW nfet_05v0 ad=0.2378p pd=1.53667u as=0.2132p ps=1.34u w=0.82u l=0.6u
+**devattr s=8528,268 d=8528,268
+X15 VDD I a_224_472# VNW pfet_05v0 ad=0.40463p pd=2.08667u as=0.3782p ps=1.84u w=1.22u l=0.5u
+**devattr s=15128,368 d=15128,368
+X16 VSS a_224_472# Z VPW nfet_05v0 ad=0.2378p pd=1.53667u as=0.2132p ps=1.34u w=0.82u l=0.6u
+**devattr s=8528,268 d=8528,268
+X17 VDD a_224_472# Z VNW pfet_05v0 ad=0.40463p pd=2.08667u as=0.3782p ps=1.84u w=1.22u l=0.5u
+**devattr s=15128,368 d=21472,664
+X18 VSS a_224_472# Z VPW nfet_05v0 ad=0.2378p pd=1.53667u as=0.2132p ps=1.34u w=0.82u l=0.6u
+**devattr s=8528,268 d=8528,268
+X19 Z a_224_472# VDD VNW pfet_05v0 ad=0.3782p pd=1.84u as=0.40463p ps=2.08667u w=1.22u l=0.5u
+**devattr s=15128,368 d=15128,368
+X20 VSS I a_224_472# VPW nfet_05v0 ad=0.2378p pd=1.53667u as=0.2132p ps=1.34u w=0.82u l=0.6u
+**devattr s=8528,268 d=8528,268
+X21 a_224_472# I VDD VNW pfet_05v0 ad=0.3782p pd=1.84u as=0.40463p ps=2.08667u w=1.22u l=0.5u
+**devattr s=21472,664 d=15128,368
+X22 VSS I a_224_472# VPW nfet_05v0 ad=0.2378p pd=1.53667u as=0.2132p ps=1.34u w=0.82u l=0.6u
+**devattr s=8528,268 d=8528,268
+X23 Z a_224_472# VSS VPW nfet_05v0 ad=0.2132p pd=1.34u as=0.2378p ps=1.53667u w=0.82u l=0.6u
+**devattr s=8528,268 d=8528,268
+.ends
+
+.subckt gf180mcu_fd_sc_mcu7t5v0__aoi21_1 A1 A2 B ZN VDD VNW VPW VSS
+X0 a_244_68# A2 VSS VPW nfet_05v0 ad=0.1312p pd=1.14u as=0.3608p ps=2.72511u w=0.82u l=0.6u
+**devattr s=14432,504 d=5248,228
+X1 ZN A1 a_244_68# VPW nfet_05v0 ad=0.31678p pd=1.92361u as=0.1312p ps=1.14u w=0.82u l=0.6u
+**devattr s=5248,228 d=10276,312
+X2 VDD B a_36_472# VNW pfet_05v0 ad=0.5346p pd=3.31u as=0.4779p ps=2.40667u w=1.215u l=0.5u
+**devattr s=17982,391 d=21384,662
+X3 ZN A2 a_36_472# VNW pfet_05v0 ad=0.3159p pd=1.735u as=0.4779p ps=2.40667u w=1.215u l=0.5u
+**devattr s=21384,662 d=12636,347
+X4 a_36_472# A1 ZN VNW pfet_05v0 ad=0.4779p pd=2.40667u as=0.3159p ps=1.735u w=1.215u l=0.5u
+**devattr s=12636,347 d=17982,391
+X5 VSS B ZN VPW nfet_05v0 ad=0.2244p pd=1.69489u as=0.19702p ps=1.19639u w=0.51u l=0.6u
+**devattr s=10276,312 d=8976,380
+.ends
+
+.subckt gf180mcu_fd_sc_mcu7t5v0__clkbuf_2 I Z VDD VNW VPW VSS
+X0 VDD I a_36_160# VNW pfet_05v0 ad=0.42828p pd=2.16971u as=0.4488p ps=2.92u w=1.02u l=0.5u
+**devattr s=17952,584 d=18320,404
+X1 VSS I a_36_160# VPW nfet_05v0 ad=0.13951p pd=1.14226u as=0.1584p ps=1.6u w=0.36u l=0.6u
+**devattr s=6336,320 d=6040,237
+X2 VDD a_36_160# Z VNW pfet_05v0 ad=0.51226p pd=2.59514u as=0.3782p ps=1.84u w=1.22u l=0.5u
+**devattr s=15128,368 d=21472,664
+X3 Z a_36_160# VDD VNW pfet_05v0 ad=0.3782p pd=1.84u as=0.51226p ps=2.59514u w=1.22u l=0.5u
+**devattr s=18320,404 d=15128,368
+X4 VSS a_36_160# Z VPW nfet_05v0 ad=0.18795p pd=1.53887u as=0.1261p ps=1.005u w=0.485u l=0.6u
+**devattr s=5044,201 d=8536,370
+X5 Z a_36_160# VSS VPW nfet_05v0 ad=0.1261p pd=1.005u as=0.18795p ps=1.53887u w=0.485u l=0.6u
+**devattr s=6040,237 d=5044,201
+.ends
+
+.subckt gf180mcu_fd_sc_mcu7t5v0__oai21_1 A1 A2 B ZN VDD VNW VPW VSS
+X0 VSS B a_36_68# VPW nfet_05v0 ad=0.3608p pd=2.52u as=0.2624p ps=1.73333u w=0.82u l=0.6u
+**devattr s=8528,268 d=14432,504
+X1 ZN A2 a_36_68# VPW nfet_05v0 ad=0.2132p pd=1.34u as=0.2624p ps=1.73333u w=0.82u l=0.6u
+**devattr s=14432,504 d=8528,268
+X2 VDD B ZN VNW pfet_05v0 ad=0.52653p pd=3.15438u as=0.40853p ps=1.8657u w=1.13u l=0.5u
+**devattr s=16992,388 d=19888,628
+X3 a_244_472# A2 VDD VNW pfet_05v0 ad=0.3172p pd=1.74u as=0.56847p ps=3.40562u w=1.22u l=0.5u
+**devattr s=23912,684 d=12688,348
+X4 ZN A1 a_244_472# VNW pfet_05v0 ad=0.44107p pd=2.0143u as=0.3172p ps=1.74u w=1.22u l=0.5u
+**devattr s=12688,348 d=16992,388
+X5 a_36_68# A1 ZN VPW nfet_05v0 ad=0.2624p pd=1.73333u as=0.2132p ps=1.34u w=0.82u l=0.6u
+**devattr s=8528,268 d=8528,268
+.ends
+
+.subckt gf180mcu_fd_sc_mcu7t5v0__nand2_1 A1 A2 ZN VDD VNW VPW VSS
+X0 ZN A2 VDD VNW pfet_05v0 ad=0.2938p pd=1.65u as=0.4972p ps=3.14u w=1.13u l=0.5u
+**devattr s=19888,628 d=11752,330
+X1 ZN A1 a_245_68# VPW nfet_05v0 ad=0.3608p pd=2.52u as=0.1312p ps=1.14u w=0.82u l=0.6u
+**devattr s=5248,228 d=14432,504
+X2 VDD A1 ZN VNW pfet_05v0 ad=0.4972p pd=3.14u as=0.2938p ps=1.65u w=1.13u l=0.5u
+**devattr s=11752,330 d=19888,628
+X3 a_245_68# A2 VSS VPW nfet_05v0 ad=0.1312p pd=1.14u as=0.3608p ps=2.52u w=0.82u l=0.6u
+**devattr s=14432,504 d=5248,228
+.ends
+
+.subckt gf180mcu_fd_sc_mcu7t5v0__fillcap_16 VDD VNW VPW VSS
+X0 VDD a_572_375# a_484_472# VNW pfet_05v0 ad=0.5368p pd=3.32u as=0.5368p ps=3.32u w=1.22u l=1u
+**devattr s=21472,664 d=21472,664
+X1 a_572_375# a_484_472# VSS VPW nfet_05v0 ad=0.3608p pd=2.52u as=0.3608p ps=2.52u w=0.82u l=1u
+**devattr s=14432,504 d=14432,504
+X2 a_124_375# a_36_472# VSS VPW nfet_05v0 ad=0.3608p pd=2.52u as=0.3608p ps=2.52u w=0.82u l=1u
+**devattr s=14432,504 d=14432,504
+X3 a_1468_375# a_1380_472# VSS VPW nfet_05v0 ad=0.3608p pd=2.52u as=0.3608p ps=2.52u w=0.82u l=1u
+**devattr s=14432,504 d=14432,504
+X4 VDD a_1020_375# a_932_472# VNW pfet_05v0 ad=0.5368p pd=3.32u as=0.5368p ps=3.32u w=1.22u l=1u
+**devattr s=21472,664 d=21472,664
+X5 VDD a_1468_375# a_1380_472# VNW pfet_05v0 ad=0.5368p pd=3.32u as=0.5368p ps=3.32u w=1.22u l=1u
+**devattr s=21472,664 d=21472,664
+X6 VDD a_124_375# a_36_472# VNW pfet_05v0 ad=0.5368p pd=3.32u as=0.5368p ps=3.32u w=1.22u l=1u
+**devattr s=21472,664 d=21472,664
+X7 a_1020_375# a_932_472# VSS VPW nfet_05v0 ad=0.3608p pd=2.52u as=0.3608p ps=2.52u w=0.82u l=1u
+**devattr s=14432,504 d=14432,504
+.ends
+
+.subckt gf180mcu_fd_sc_mcu7t5v0__nand4_4 A1 A2 A3 A4 ZN VDD VNW VPW VSS
+X0 ZN A2 VDD VNW pfet_05v0 ad=0.2197p pd=1.365u as=0.28519p ps=1.62562u w=0.845u l=0.5u
+**devattr s=8788,273 d=8788,273
+X1 VDD A1 ZN VNW pfet_05v0 ad=0.28519p pd=1.62562u as=0.2197p ps=1.365u w=0.845u l=0.5u
+**devattr s=8788,273 d=16224,361
+X2 ZN A3 VDD VNW pfet_05v0 ad=0.2197p pd=1.365u as=0.28519p ps=1.62562u w=0.845u l=0.5u
+**devattr s=14872,514 d=8788,273
+X3 a_244_68# A3 a_36_68# VPW nfet_05v0 ad=0.1312p pd=1.14u as=0.2624p ps=1.73333u w=0.82u l=0.6u
+**devattr s=14432,504 d=5248,228
+X4 VSS A4 a_244_68# VPW nfet_05v0 ad=0.2132p pd=1.34u as=0.1312p ps=1.14u w=0.82u l=0.6u
+**devattr s=5248,228 d=8528,268
+X5 a_1468_68# A4 VSS VPW nfet_05v0 ad=0.1517p pd=1.19u as=0.2132p ps=1.34u w=0.82u l=0.6u
+**devattr s=8528,268 d=6068,238
+X6 VDD A4 ZN VNW pfet_05v0 ad=0.28519p pd=1.62562u as=0.2197p ps=1.365u w=0.845u l=0.5u
+**devattr s=8788,273 d=8788,273
+X7 a_1866_68# A2 a_1662_68# VPW nfet_05v0 ad=0.1517p pd=1.19u as=0.1722p ps=1.24u w=0.82u l=0.6u
+**devattr s=6888,248 d=6068,238
+X8 ZN A4 VDD VNW pfet_05v0 ad=0.2197p pd=1.365u as=0.28519p ps=1.62562u w=0.845u l=0.5u
+**devattr s=8788,273 d=8788,273
+X9 ZN A1 VDD VNW pfet_05v0 ad=0.2197p pd=1.365u as=0.28519p ps=1.62562u w=0.845u l=0.5u
+**devattr s=16224,361 d=8788,273
+X10 a_3276_68# A1 ZN VPW nfet_05v0 ad=0.1312p pd=1.14u as=0.4161p ps=1.905u w=0.82u l=0.6u
+**devattr s=16644,381 d=5248,228
+X11 a_652_68# A4 VSS VPW nfet_05v0 ad=0.1312p pd=1.14u as=0.2132p ps=1.34u w=0.82u l=0.6u
+**devattr s=8528,268 d=5248,228
+X12 a_36_68# A3 a_652_68# VPW nfet_05v0 ad=0.2624p pd=1.73333u as=0.1312p ps=1.14u w=0.82u l=0.6u
+**devattr s=5248,228 d=8528,268
+X13 VDD A2 ZN VNW pfet_05v0 ad=0.28519p pd=1.62562u as=0.2197p ps=1.365u w=0.845u l=0.5u
+**devattr s=8788,273 d=14872,514
+X14 VDD A3 ZN VNW pfet_05v0 ad=0.28519p pd=1.62562u as=0.2197p ps=1.365u w=0.845u l=0.5u
+**devattr s=8788,273 d=8788,273
+X15 VSS A4 a_1060_68# VPW nfet_05v0 ad=0.2132p pd=1.34u as=0.1312p ps=1.14u w=0.82u l=0.6u
+**devattr s=5248,228 d=8528,268
+X16 ZN A3 VDD VNW pfet_05v0 ad=0.2197p pd=1.365u as=0.28519p ps=1.62562u w=0.845u l=0.5u
+**devattr s=8788,273 d=8788,273
+X17 a_2372_68# A1 ZN VPW nfet_05v0 ad=0.1312p pd=1.14u as=0.4161p ps=1.905u w=0.82u l=0.6u
+**devattr s=16644,381 d=5248,228
+X18 a_36_68# A2 a_2372_68# VPW nfet_05v0 ad=0.2624p pd=1.73333u as=0.1312p ps=1.14u w=0.82u l=0.6u
+**devattr s=5248,228 d=8528,268
+X19 ZN A1 VDD VNW pfet_05v0 ad=0.2197p pd=1.365u as=0.28519p ps=1.62562u w=0.845u l=0.5u
+**devattr s=16224,361 d=8788,273
+X20 a_1060_68# A3 a_36_68# VPW nfet_05v0 ad=0.1312p pd=1.14u as=0.2624p ps=1.73333u w=0.82u l=0.6u
+**devattr s=8528,268 d=5248,228
+X21 VDD A2 ZN VNW pfet_05v0 ad=0.28519p pd=1.62562u as=0.2197p ps=1.365u w=0.845u l=0.5u
+**devattr s=8788,273 d=8788,273
+X22 VDD A4 ZN VNW pfet_05v0 ad=0.28519p pd=1.62562u as=0.2197p ps=1.365u w=0.845u l=0.5u
+**devattr s=8788,273 d=8788,273
+X23 ZN A2 VDD VNW pfet_05v0 ad=0.2197p pd=1.365u as=0.28519p ps=1.62562u w=0.845u l=0.5u
+**devattr s=8788,273 d=8788,273
+X24 ZN A1 a_2780_68# VPW nfet_05v0 ad=0.4161p pd=1.905u as=0.1312p ps=1.14u w=0.82u l=0.6u
+**devattr s=5248,228 d=16644,381
+X25 a_2780_68# A2 a_36_68# VPW nfet_05v0 ad=0.1312p pd=1.14u as=0.2624p ps=1.73333u w=0.82u l=0.6u
+**devattr s=8528,268 d=5248,228
+X26 ZN A4 VDD VNW pfet_05v0 ad=0.2197p pd=1.365u as=0.28519p ps=1.62562u w=0.845u l=0.5u
+**devattr s=8788,273 d=8788,273
+X27 VDD A1 ZN VNW pfet_05v0 ad=0.28519p pd=1.62562u as=0.2197p ps=1.365u w=0.845u l=0.5u
+**devattr s=8788,273 d=16224,361
+X28 a_36_68# A2 a_3276_68# VPW nfet_05v0 ad=0.2624p pd=1.73333u as=0.1312p ps=1.14u w=0.82u l=0.6u
+**devattr s=5248,228 d=14432,504
+X29 VDD A3 ZN VNW pfet_05v0 ad=0.28519p pd=1.62562u as=0.2197p ps=1.365u w=0.845u l=0.5u
+**devattr s=8788,273 d=8788,273
+X30 a_1662_68# A3 a_1468_68# VPW nfet_05v0 ad=0.1722p pd=1.24u as=0.1517p ps=1.19u w=0.82u l=0.6u
+**devattr s=6068,238 d=6888,248
+X31 ZN A1 a_1866_68# VPW nfet_05v0 ad=0.4161p pd=1.905u as=0.1517p ps=1.19u w=0.82u l=0.6u
+**devattr s=6068,238 d=16644,381
+.ends
+
+.subckt gf180mcu_fd_sc_mcu7t5v0__tiel ZN VDD VNW VPW VSS
+X0 ZN a_124_24# VSS VPW nfet_05v0 ad=0.3608p pd=2.52u as=0.3608p ps=2.52u w=0.82u l=0.6u
+**devattr s=14432,504 d=14432,504
+X1 a_124_24# a_124_24# VDD VNW pfet_05v0 ad=0.5368p pd=3.32u as=0.5368p ps=3.32u w=1.22u l=0.5u
+**devattr s=21472,664 d=21472,664
+.ends
+
+.subckt gf180mcu_fd_sc_mcu7t5v0__clkbuf_1 I Z VDD VNW VPW VSS
+X0 VDD I a_36_113# VNW pfet_05v0 ad=0.37143p pd=1.77621u as=0.462p ps=2.98u w=1.05u l=0.5u
+**devattr s=18480,596 d=16060,384
+X1 Z a_36_113# VDD VNW pfet_05v0 ad=0.5368p pd=3.32u as=0.43157p ps=2.06379u w=1.22u l=0.5u
+**devattr s=16060,384 d=21472,664
+X2 Z a_36_113# VSS VPW nfet_05v0 ad=0.2178p pd=1.87u as=0.17716p ps=1.38368u w=0.495u l=0.6u
+**devattr s=6120,239 d=8712,374
+X3 VSS I a_36_113# VPW nfet_05v0 ad=0.12884p pd=1.00632u as=0.1584p ps=1.6u w=0.36u l=0.6u
+**devattr s=6336,320 d=6120,239
+.ends
+
+.subckt gf180mcu_fd_sc_mcu7t5v0__nor2_1 A1 A2 ZN VDD VNW VPW VSS
+X0 ZN A1 a_224_472# VNW pfet_05v0 ad=0.5368p pd=3.32u as=0.4087p ps=1.89u w=1.22u l=0.5u
+**devattr s=16348,378 d=21472,664
+X1 VSS A1 ZN VPW nfet_05v0 ad=0.2486p pd=2.01u as=0.1469p ps=1.085u w=0.565u l=0.6u
+**devattr s=5876,217 d=9944,402
+X2 a_224_472# A2 VDD VNW pfet_05v0 ad=0.4087p pd=1.89u as=0.5368p ps=3.32u w=1.22u l=0.5u
+**devattr s=21472,664 d=16348,378
+X3 ZN A2 VSS VPW nfet_05v0 ad=0.1469p pd=1.085u as=0.2486p ps=2.01u w=0.565u l=0.6u
+**devattr s=9944,402 d=5876,217
+.ends
+
+.subckt gf180mcu_fd_sc_mcu7t5v0__tieh Z VDD VNW VPW VSS
+X0 Z a_125_24# VDD VNW pfet_05v0 ad=0.5368p pd=3.32u as=0.5368p ps=3.32u w=1.22u l=0.5u
+**devattr s=21472,664 d=21472,664
+X1 a_125_24# a_125_24# VSS VPW nfet_05v0 ad=0.3608p pd=2.52u as=0.3608p ps=2.52u w=0.82u l=0.6u
+**devattr s=14432,504 d=14432,504
+.ends
+
+.subckt gf180mcu_fd_sc_mcu7t5v0__buf_4 I Z VDD VNW VPW VSS
+X0 Z a_224_472# VDD VNW pfet_05v0 ad=0.3782p pd=1.84u as=0.43107p ps=2.33333u w=1.22u l=0.5u
+**devattr s=15128,368 d=15128,368
+X1 Z a_224_472# VSS VPW nfet_05v0 ad=0.2132p pd=1.34u as=0.2624p ps=1.73333u w=0.82u l=0.6u
+**devattr s=8528,268 d=8528,268
+X2 VDD a_224_472# Z VNW pfet_05v0 ad=0.43107p pd=2.33333u as=0.3782p ps=1.84u w=1.22u l=0.5u
+**devattr s=15128,368 d=21472,664
+X3 a_224_472# I VSS VPW nfet_05v0 ad=0.2132p pd=1.34u as=0.2624p ps=1.73333u w=0.82u l=0.6u
+**devattr s=14432,504 d=8528,268
+X4 VDD I a_224_472# VNW pfet_05v0 ad=0.43107p pd=2.33333u as=0.3782p ps=1.84u w=1.22u l=0.5u
+**devattr s=15128,368 d=15128,368
+X5 Z a_224_472# VDD VNW pfet_05v0 ad=0.3782p pd=1.84u as=0.43107p ps=2.33333u w=1.22u l=0.5u
+**devattr s=15128,368 d=15128,368
+X6 VDD a_224_472# Z VNW pfet_05v0 ad=0.43107p pd=2.33333u as=0.3782p ps=1.84u w=1.22u l=0.5u
+**devattr s=15128,368 d=15128,368
+X7 VSS a_224_472# Z VPW nfet_05v0 ad=0.2624p pd=1.73333u as=0.2132p ps=1.34u w=0.82u l=0.6u
+**devattr s=8528,268 d=14432,504
+X8 VSS a_224_472# Z VPW nfet_05v0 ad=0.2624p pd=1.73333u as=0.2132p ps=1.34u w=0.82u l=0.6u
+**devattr s=8528,268 d=8528,268
+X9 a_224_472# I VDD VNW pfet_05v0 ad=0.3782p pd=1.84u as=0.43107p ps=2.33333u w=1.22u l=0.5u
+**devattr s=21472,664 d=15128,368
+X10 VSS I a_224_472# VPW nfet_05v0 ad=0.2624p pd=1.73333u as=0.2132p ps=1.34u w=0.82u l=0.6u
+**devattr s=8528,268 d=8528,268
+X11 Z a_224_472# VSS VPW nfet_05v0 ad=0.2132p pd=1.34u as=0.2624p ps=1.73333u w=0.82u l=0.6u
+**devattr s=8528,268 d=8528,268
+.ends
+
+.subckt gf180mcu_fd_sc_mcu7t5v0__nand3_2 A1 A2 A3 ZN VDD VNW VPW VSS
+X0 ZN A1 VDD VNW pfet_05v0 ad=0.2561p pd=1.505u as=0.3152p ps=1.95333u w=0.985u l=0.5u
+**devattr s=10244,301 d=10244,301
+X1 VDD A1 ZN VNW pfet_05v0 ad=0.3152p pd=1.95333u as=0.2561p ps=1.505u w=0.985u l=0.5u
+**devattr s=10244,301 d=10244,301
+X2 a_1044_68# A2 a_860_68# VPW nfet_05v0 ad=0.1722p pd=1.24u as=0.1312p ps=1.14u w=0.82u l=0.6u
+**devattr s=5248,228 d=6888,248
+X3 a_860_68# A1 ZN VPW nfet_05v0 ad=0.1312p pd=1.14u as=0.2132p ps=1.34u w=0.82u l=0.6u
+**devattr s=8528,268 d=5248,228
+X4 ZN A2 VDD VNW pfet_05v0 ad=0.2561p pd=1.505u as=0.3152p ps=1.95333u w=0.985u l=0.5u
+**devattr s=10244,301 d=10244,301
+X5 VDD A3 ZN VNW pfet_05v0 ad=0.3152p pd=1.95333u as=0.2561p ps=1.505u w=0.985u l=0.5u
+**devattr s=10244,301 d=17336,570
+X6 VSS A3 a_1044_68# VPW nfet_05v0 ad=0.3608p pd=2.52u as=0.1722p ps=1.24u w=0.82u l=0.6u
+**devattr s=6888,248 d=14432,504
+X7 a_276_68# A3 VSS VPW nfet_05v0 ad=0.1148p pd=1.1u as=0.3608p ps=2.52u w=0.82u l=0.6u
+**devattr s=14432,504 d=4592,220
+X8 ZN A3 VDD VNW pfet_05v0 ad=0.2561p pd=1.505u as=0.3152p ps=1.95333u w=0.985u l=0.5u
+**devattr s=17336,570 d=10244,301
+X9 VDD A2 ZN VNW pfet_05v0 ad=0.3152p pd=1.95333u as=0.2561p ps=1.505u w=0.985u l=0.5u
+**devattr s=10244,301 d=10244,301
+X10 a_452_68# A2 a_276_68# VPW nfet_05v0 ad=0.1312p pd=1.14u as=0.1148p ps=1.1u w=0.82u l=0.6u
+**devattr s=4592,220 d=5248,228
+X11 ZN A1 a_452_68# VPW nfet_05v0 ad=0.2132p pd=1.34u as=0.1312p ps=1.14u w=0.82u l=0.6u
+**devattr s=5248,228 d=8528,268
+.ends
+
+.subckt gf180mcu_fd_sc_mcu7t5v0__clkbuf_16 I Z VDD VNW VPW VSS
+X0 VSS I a_224_552# VPW nfet_05v0 ad=0.11224p pd=0.92685u as=0.1296p ps=1.18u w=0.405u l=0.6u
+**devattr s=4212,185 d=4212,185
+X1 VSS a_224_552# Z VPW nfet_05v0 ad=0.13441p pd=1.10993u as=0.1261p ps=1.005u w=0.485u l=0.6u
+**devattr s=5044,201 d=5044,201
+X2 a_224_552# I VDD VNW pfet_05v0 ad=0.2542p pd=1.44u as=0.26957p ps=1.39224u w=0.82u l=0.5u
+**devattr s=10168,288 d=10168,288
+X3 Z a_224_552# VDD VNW pfet_05v0 ad=0.3782p pd=1.84u as=0.40107p ps=2.07138u w=1.22u l=0.5u
+**devattr s=15128,368 d=15128,368
+X4 Z a_224_552# VSS VPW nfet_05v0 ad=0.1261p pd=1.005u as=0.13441p ps=1.10993u w=0.485u l=0.6u
+**devattr s=5044,201 d=5044,201
+X5 VDD a_224_552# Z VNW pfet_05v0 ad=0.40107p pd=2.07138u as=0.3782p ps=1.84u w=1.22u l=0.5u
+**devattr s=15128,368 d=15128,368
+X6 VDD a_224_552# Z VNW pfet_05v0 ad=0.40107p pd=2.07138u as=0.3782p ps=1.84u w=1.22u l=0.5u
+**devattr s=15128,368 d=15128,368
+X7 Z a_224_552# VDD VNW pfet_05v0 ad=0.3782p pd=1.84u as=0.40107p ps=2.07138u w=1.22u l=0.5u
+**devattr s=15128,368 d=15128,368
+X8 a_224_552# I VDD VNW pfet_05v0 ad=0.2542p pd=1.44u as=0.26957p ps=1.39224u w=0.82u l=0.5u
+**devattr s=14432,504 d=10168,288
+X9 VDD a_224_552# Z VNW pfet_05v0 ad=0.40107p pd=2.07138u as=0.3782p ps=1.84u w=1.22u l=0.5u
+**devattr s=15128,368 d=15128,368
+X10 Z a_224_552# VSS VPW nfet_05v0 ad=0.1261p pd=1.005u as=0.13441p ps=1.10993u w=0.485u l=0.6u
+**devattr s=5044,201 d=5044,201
+X11 VSS a_224_552# Z VPW nfet_05v0 ad=0.13441p pd=1.10993u as=0.1261p ps=1.005u w=0.485u l=0.6u
+**devattr s=5044,201 d=5044,201
+X12 VSS a_224_552# Z VPW nfet_05v0 ad=0.13441p pd=1.10993u as=0.1261p ps=1.005u w=0.485u l=0.6u
+**devattr s=5044,201 d=5044,201
+X13 VDD a_224_552# Z VNW pfet_05v0 ad=0.40107p pd=2.07138u as=0.3782p ps=1.84u w=1.22u l=0.5u
+**devattr s=15128,368 d=21472,664
+X14 Z a_224_552# VSS VPW nfet_05v0 ad=0.1261p pd=1.005u as=0.13441p ps=1.10993u w=0.485u l=0.6u
+**devattr s=5044,201 d=5044,201
+X15 VSS I a_224_552# VPW nfet_05v0 ad=0.11224p pd=0.92685u as=0.1296p ps=1.18u w=0.405u l=0.6u
+**devattr s=7128,338 d=4212,185
+X16 a_224_552# I VDD VNW pfet_05v0 ad=0.2542p pd=1.44u as=0.26957p ps=1.39224u w=0.82u l=0.5u
+**devattr s=10168,288 d=10168,288
+X17 a_224_552# I VSS VPW nfet_05v0 ad=0.1296p pd=1.18u as=0.11224p ps=0.92685u w=0.405u l=0.6u
+**devattr s=4212,185 d=4212,185
+X18 VSS a_224_552# Z VPW nfet_05v0 ad=0.13441p pd=1.10993u as=0.1261p ps=1.005u w=0.485u l=0.6u
+**devattr s=5044,201 d=5044,201
+X19 Z a_224_552# VDD VNW pfet_05v0 ad=0.3782p pd=1.84u as=0.40107p ps=2.07138u w=1.22u l=0.5u
+**devattr s=17120,404 d=15128,368
+X20 VDD I a_224_552# VNW pfet_05v0 ad=0.26957p pd=1.39224u as=0.2542p ps=1.44u w=0.82u l=0.5u
+**devattr s=10168,288 d=10168,288
+X21 Z a_224_552# VDD VNW pfet_05v0 ad=0.3782p pd=1.84u as=0.40107p ps=2.07138u w=1.22u l=0.5u
+**devattr s=15128,368 d=15128,368
+X22 Z a_224_552# VDD VNW pfet_05v0 ad=0.3782p pd=1.84u as=0.40107p ps=2.07138u w=1.22u l=0.5u
+**devattr s=15128,368 d=15128,368
+X23 VSS I a_224_552# VPW nfet_05v0 ad=0.11224p pd=0.92685u as=0.1296p ps=1.18u w=0.405u l=0.6u
+**devattr s=4212,185 d=4212,185
+X24 VDD a_224_552# Z VNW pfet_05v0 ad=0.40107p pd=2.07138u as=0.3782p ps=1.84u w=1.22u l=0.5u
+**devattr s=15128,368 d=15128,368
+X25 Z a_224_552# VSS VPW nfet_05v0 ad=0.1261p pd=1.005u as=0.13441p ps=1.10993u w=0.485u l=0.6u
+**devattr s=5044,201 d=5044,201
+X26 VSS a_224_552# Z VPW nfet_05v0 ad=0.13441p pd=1.10993u as=0.1261p ps=1.005u w=0.485u l=0.6u
+**devattr s=5044,201 d=5044,201
+X27 VSS a_224_552# Z VPW nfet_05v0 ad=0.13441p pd=1.10993u as=0.1261p ps=1.005u w=0.485u l=0.6u
+**devattr s=5044,201 d=5044,201
+X28 VDD I a_224_552# VNW pfet_05v0 ad=0.26957p pd=1.39224u as=0.2542p ps=1.44u w=0.82u l=0.5u
+**devattr s=10168,288 d=17120,404
+X29 Z a_224_552# VDD VNW pfet_05v0 ad=0.3782p pd=1.84u as=0.40107p ps=2.07138u w=1.22u l=0.5u
+**devattr s=15128,368 d=15128,368
+X30 a_224_552# I VSS VPW nfet_05v0 ad=0.1296p pd=1.18u as=0.11224p ps=0.92685u w=0.405u l=0.6u
+**devattr s=4212,185 d=7128,338
+X31 Z a_224_552# VSS VPW nfet_05v0 ad=0.1261p pd=1.005u as=0.13441p ps=1.10993u w=0.485u l=0.6u
+**devattr s=5044,201 d=5044,201
+X32 VSS a_224_552# Z VPW nfet_05v0 ad=0.13441p pd=1.10993u as=0.1261p ps=1.005u w=0.485u l=0.6u
+**devattr s=5044,201 d=5044,201
+X33 Z a_224_552# VDD VNW pfet_05v0 ad=0.3782p pd=1.84u as=0.40107p ps=2.07138u w=1.22u l=0.5u
+**devattr s=15128,368 d=15128,368
+X34 VSS a_224_552# Z VPW nfet_05v0 ad=0.13441p pd=1.10993u as=0.1261p ps=1.005u w=0.485u l=0.6u
+**devattr s=5044,201 d=8536,370
+X35 VDD I a_224_552# VNW pfet_05v0 ad=0.26957p pd=1.39224u as=0.2542p ps=1.44u w=0.82u l=0.5u
+**devattr s=10168,288 d=10168,288
+X36 VDD a_224_552# Z VNW pfet_05v0 ad=0.40107p pd=2.07138u as=0.3782p ps=1.84u w=1.22u l=0.5u
+**devattr s=15128,368 d=15128,368
+X37 VDD a_224_552# Z VNW pfet_05v0 ad=0.40107p pd=2.07138u as=0.3782p ps=1.84u w=1.22u l=0.5u
+**devattr s=15128,368 d=15128,368
+X38 Z a_224_552# VDD VNW pfet_05v0 ad=0.3782p pd=1.84u as=0.40107p ps=2.07138u w=1.22u l=0.5u
+**devattr s=15128,368 d=15128,368
+X39 a_224_552# I VDD VNW pfet_05v0 ad=0.2542p pd=1.44u as=0.26957p ps=1.39224u w=0.82u l=0.5u
+**devattr s=10168,288 d=10168,288
+X40 a_224_552# I VSS VPW nfet_05v0 ad=0.1296p pd=1.18u as=0.11224p ps=0.92685u w=0.405u l=0.6u
+**devattr s=4212,185 d=4212,185
+X41 Z a_224_552# VSS VPW nfet_05v0 ad=0.1261p pd=1.005u as=0.13441p ps=1.10993u w=0.485u l=0.6u
+**devattr s=8536,370 d=5044,201
+X42 VDD I a_224_552# VNW pfet_05v0 ad=0.26957p pd=1.39224u as=0.2542p ps=1.44u w=0.82u l=0.5u
+**devattr s=10168,288 d=10168,288
+X43 VDD a_224_552# Z VNW pfet_05v0 ad=0.40107p pd=2.07138u as=0.3782p ps=1.84u w=1.22u l=0.5u
+**devattr s=15128,368 d=15128,368
+X44 Z a_224_552# VSS VPW nfet_05v0 ad=0.1261p pd=1.005u as=0.13441p ps=1.10993u w=0.485u l=0.6u
+**devattr s=5044,201 d=5044,201
+X45 Z a_224_552# VSS VPW nfet_05v0 ad=0.1261p pd=1.005u as=0.13441p ps=1.10993u w=0.485u l=0.6u
+**devattr s=5044,201 d=5044,201
+.ends
+
+.subckt gf180mcu_fd_sc_mcu7t5v0__buf_2 I Z VDD VNW VPW VSS
+X0 Z a_36_68# VDD VNW pfet_05v0 ad=0.3782p pd=1.84u as=0.50833p ps=2.46u w=1.22u l=0.5u
+**devattr s=19764,406 d=15128,368
+X1 VSS I a_36_68# VPW nfet_05v0 ad=0.31433p pd=1.86u as=0.3608p ps=2.52u w=0.82u l=0.6u
+**devattr s=14432,504 d=11644,306
+X2 Z a_36_68# VSS VPW nfet_05v0 ad=0.2132p pd=1.34u as=0.31433p ps=1.86u w=0.82u l=0.6u
+**devattr s=11644,306 d=8528,268
+X3 VDD I a_36_68# VNW pfet_05v0 ad=0.50833p pd=2.46u as=0.5368p ps=3.32u w=1.22u l=0.5u
+**devattr s=21472,664 d=19764,406
+X4 VSS a_36_68# Z VPW nfet_05v0 ad=0.31433p pd=1.86u as=0.2132p ps=1.34u w=0.82u l=0.6u
+**devattr s=8528,268 d=14432,504
+X5 VDD a_36_68# Z VNW pfet_05v0 ad=0.50833p pd=2.46u as=0.3782p ps=1.84u w=1.22u l=0.5u
+**devattr s=15128,368 d=21472,664
+.ends
+
+.subckt gf180mcu_fd_sc_mcu7t5v0__dlyb_1 I Z VDD VNW VPW VSS
+X0 a_523_68# a_47_68# VSS VPW nfet_05v0 ad=43.2f pd=0.6u as=0.1422p ps=1.03937u w=0.36u l=0.6u
+**devattr s=3744,176 d=1728,120
+X1 a_671_644# a_47_68# a_523_68# VPW nfet_05v0 ad=0.369p pd=2.77u as=43.2f ps=0.6u w=0.36u l=0.6u
+**devattr s=1728,120 d=14760,554
+X2 a_503_644# a_47_68# VDD VNW pfet_05v0 ad=61.19999f pd=0.7u as=0.15358p ps=1.0487u w=0.36u l=0.5u
+**devattr s=4464,196 d=2448,140
+X3 VDD a_671_644# a_1127_622# VNW pfet_05v0 ad=0.15358p pd=1.0487u as=61.19999f ps=0.7u w=0.36u l=0.5u
+**devattr s=2448,140 d=15160,474
+X4 VDD I a_47_68# VNW pfet_05v0 ad=0.15358p pd=1.0487u as=0.3852p ps=2.86u w=0.36u l=0.5u
+**devattr s=15408,572 d=4464,196
+X5 Z a_895_68# VSS VPW nfet_05v0 ad=0.3608p pd=2.52u as=0.32389p ps=2.36745u w=0.82u l=0.6u
+**devattr s=11305,374 d=14432,504
+X6 a_1147_68# a_671_644# a_895_68# VPW nfet_05v0 ad=43.8f pd=0.605u as=0.3705p ps=2.77u w=0.365u l=0.6u
+**devattr s=14820,554 d=1752,121
+X7 a_1127_622# a_671_644# a_895_68# VNW pfet_05v0 ad=61.19999f pd=0.7u as=0.3456p ps=2.64u w=0.36u l=0.5u
+**devattr s=13824,528 d=2448,140
+X8 VSS a_671_644# a_1147_68# VPW nfet_05v0 ad=0.14417p pd=1.05381u as=43.8f ps=0.605u w=0.365u l=0.6u
+**devattr s=1752,121 d=11305,374
+X9 a_671_644# a_47_68# a_503_644# VNW pfet_05v0 ad=0.3852p pd=2.86u as=61.19999f ps=0.7u w=0.36u l=0.5u
+**devattr s=2448,140 d=15408,572
+X10 VSS I a_47_68# VPW nfet_05v0 ad=0.1422p pd=1.03937u as=0.333p ps=2.57u w=0.36u l=0.6u
+**devattr s=13320,514 d=3744,176
+X11 Z a_895_68# VDD VNW pfet_05v0 ad=0.5368p pd=3.32u as=0.52046p ps=3.55391u w=1.22u l=0.5u
+**devattr s=15160,474 d=21472,664
+.ends
+
+.subckt gf180mcu_fd_sc_mcu7t5v0__buf_20 I Z VDD VNW VPW VSS
+X0 Z a_224_472# VSS VPW nfet_05v0 ad=0.2132p pd=1.34u as=0.22304p ps=1.41867u w=0.82u l=0.6u
+**devattr s=8528,268 d=8528,268
+X1 VSS a_224_472# Z VPW nfet_05v0 ad=0.22304p pd=1.41867u as=0.2132p ps=1.34u w=0.82u l=0.6u
+**devattr s=8528,268 d=8528,268
+X2 a_224_472# I VDD VNW pfet_05v0 ad=0.3782p pd=1.84u as=0.38877p ps=1.93867u w=1.22u l=0.5u
+**devattr s=15128,368 d=15128,368
+X3 VDD a_224_472# Z VNW pfet_05v0 ad=0.38877p pd=1.93867u as=0.3782p ps=1.84u w=1.22u l=0.5u
+**devattr s=15128,368 d=15128,368
+X4 Z a_224_472# VDD VNW pfet_05v0 ad=0.3782p pd=1.84u as=0.38877p ps=1.93867u w=1.22u l=0.5u
+**devattr s=15128,368 d=15128,368
+X5 Z a_224_472# VSS VPW nfet_05v0 ad=0.2132p pd=1.34u as=0.22304p ps=1.41867u w=0.82u l=0.6u
+**devattr s=8528,268 d=8528,268
+X6 Z a_224_472# VSS VPW nfet_05v0 ad=0.2132p pd=1.34u as=0.22304p ps=1.41867u w=0.82u l=0.6u
+**devattr s=8528,268 d=8528,268
+X7 VDD a_224_472# Z VNW pfet_05v0 ad=0.38877p pd=1.93867u as=0.3782p ps=1.84u w=1.22u l=0.5u
+**devattr s=15128,368 d=15128,368
+X8 a_224_472# I VSS VPW nfet_05v0 ad=0.2132p pd=1.34u as=0.22304p ps=1.41867u w=0.82u l=0.6u
+**devattr s=8528,268 d=8528,268
+X9 VSS a_224_472# Z VPW nfet_05v0 ad=0.22304p pd=1.41867u as=0.2132p ps=1.34u w=0.82u l=0.6u
+**devattr s=8528,268 d=8528,268
+X10 VSS a_224_472# Z VPW nfet_05v0 ad=0.22304p pd=1.41867u as=0.2132p ps=1.34u w=0.82u l=0.6u
+**devattr s=8528,268 d=8528,268
+X11 VDD I a_224_472# VNW pfet_05v0 ad=0.38877p pd=1.93867u as=0.3782p ps=1.84u w=1.22u l=0.5u
+**devattr s=15128,368 d=15128,368
+X12 Z a_224_472# VDD VNW pfet_05v0 ad=0.3782p pd=1.84u as=0.38877p ps=1.93867u w=1.22u l=0.5u
+**devattr s=15128,368 d=15128,368
+X13 a_224_472# I VDD VNW pfet_05v0 ad=0.3782p pd=1.84u as=0.38877p ps=1.93867u w=1.22u l=0.5u
+**devattr s=15128,368 d=15128,368
+X14 VDD a_224_472# Z VNW pfet_05v0 ad=0.38877p pd=1.93867u as=0.3782p ps=1.84u w=1.22u l=0.5u
+**devattr s=15128,368 d=15128,368
+X15 a_224_472# I VSS VPW nfet_05v0 ad=0.2132p pd=1.34u as=0.22304p ps=1.41867u w=0.82u l=0.6u
+**devattr s=14432,504 d=8528,268
+X16 Z a_224_472# VSS VPW nfet_05v0 ad=0.2132p pd=1.34u as=0.22304p ps=1.41867u w=0.82u l=0.6u
+**devattr s=8528,268 d=8528,268
+X17 a_224_472# I VSS VPW nfet_05v0 ad=0.2132p pd=1.34u as=0.22304p ps=1.41867u w=0.82u l=0.6u
+**devattr s=8528,268 d=8528,268
+X18 VSS a_224_472# Z VPW nfet_05v0 ad=0.22304p pd=1.41867u as=0.2132p ps=1.34u w=0.82u l=0.6u
+**devattr s=8528,268 d=8528,268
+X19 Z a_224_472# VDD VNW pfet_05v0 ad=0.3782p pd=1.84u as=0.38877p ps=1.93867u w=1.22u l=0.5u
+**devattr s=15128,368 d=15128,368
+X20 VSS a_224_472# Z VPW nfet_05v0 ad=0.22304p pd=1.41867u as=0.2132p ps=1.34u w=0.82u l=0.6u
+**devattr s=8528,268 d=8528,268
+X21 VDD I a_224_472# VNW pfet_05v0 ad=0.38877p pd=1.93867u as=0.3782p ps=1.84u w=1.22u l=0.5u
+**devattr s=15128,368 d=15128,368
+X22 a_224_472# I VSS VPW nfet_05v0 ad=0.2132p pd=1.34u as=0.22304p ps=1.41867u w=0.82u l=0.6u
+**devattr s=8528,268 d=8528,268
+X23 Z a_224_472# VSS VPW nfet_05v0 ad=0.2132p pd=1.34u as=0.22304p ps=1.41867u w=0.82u l=0.6u
+**devattr s=8528,268 d=8528,268
+X24 VSS a_224_472# Z VPW nfet_05v0 ad=0.22304p pd=1.41867u as=0.2132p ps=1.34u w=0.82u l=0.6u
+**devattr s=8528,268 d=8528,268
+X25 VDD a_224_472# Z VNW pfet_05v0 ad=0.38877p pd=1.93867u as=0.3782p ps=1.84u w=1.22u l=0.5u
+**devattr s=15128,368 d=15128,368
+X26 Z a_224_472# VDD VNW pfet_05v0 ad=0.3782p pd=1.84u as=0.38877p ps=1.93867u w=1.22u l=0.5u
+**devattr s=15128,368 d=15128,368
+X27 Z a_224_472# VSS VPW nfet_05v0 ad=0.2132p pd=1.34u as=0.22304p ps=1.41867u w=0.82u l=0.6u
+**devattr s=8528,268 d=8528,268
+X28 VDD I a_224_472# VNW pfet_05v0 ad=0.38877p pd=1.93867u as=0.3782p ps=1.84u w=1.22u l=0.5u
+**devattr s=15128,368 d=15128,368
+X29 VDD a_224_472# Z VNW pfet_05v0 ad=0.38877p pd=1.93867u as=0.3782p ps=1.84u w=1.22u l=0.5u
+**devattr s=15128,368 d=15128,368
+X30 VDD I a_224_472# VNW pfet_05v0 ad=0.38877p pd=1.93867u as=0.3782p ps=1.84u w=1.22u l=0.5u
+**devattr s=15128,368 d=15128,368
+X31 Z a_224_472# VSS VPW nfet_05v0 ad=0.2132p pd=1.34u as=0.22304p ps=1.41867u w=0.82u l=0.6u
+**devattr s=8528,268 d=8528,268
+X32 Z a_224_472# VDD VNW pfet_05v0 ad=0.3782p pd=1.84u as=0.38877p ps=1.93867u w=1.22u l=0.5u
+**devattr s=15128,368 d=15128,368
+X33 VDD a_224_472# Z VNW pfet_05v0 ad=0.38877p pd=1.93867u as=0.3782p ps=1.84u w=1.22u l=0.5u
+**devattr s=15128,368 d=21472,664
+X34 Z a_224_472# VSS VPW nfet_05v0 ad=0.2132p pd=1.34u as=0.22304p ps=1.41867u w=0.82u l=0.6u
+**devattr s=8528,268 d=8528,268
+X35 a_224_472# I VDD VNW pfet_05v0 ad=0.3782p pd=1.84u as=0.38877p ps=1.93867u w=1.22u l=0.5u
+**devattr s=15128,368 d=15128,368
+X36 VSS I a_224_472# VPW nfet_05v0 ad=0.22304p pd=1.41867u as=0.2132p ps=1.34u w=0.82u l=0.6u
+**devattr s=8528,268 d=8528,268
+X37 Z a_224_472# VDD VNW pfet_05v0 ad=0.3782p pd=1.84u as=0.38877p ps=1.93867u w=1.22u l=0.5u
+**devattr s=15128,368 d=15128,368
+X38 VDD I a_224_472# VNW pfet_05v0 ad=0.38877p pd=1.93867u as=0.3782p ps=1.84u w=1.22u l=0.5u
+**devattr s=15128,368 d=15128,368
+X39 VSS I a_224_472# VPW nfet_05v0 ad=0.22304p pd=1.41867u as=0.2132p ps=1.34u w=0.82u l=0.6u
+**devattr s=8528,268 d=8528,268
+X40 VDD a_224_472# Z VNW pfet_05v0 ad=0.38877p pd=1.93867u as=0.3782p ps=1.84u w=1.22u l=0.5u
+**devattr s=15128,368 d=15128,368
+X41 VSS a_224_472# Z VPW nfet_05v0 ad=0.22304p pd=1.41867u as=0.2132p ps=1.34u w=0.82u l=0.6u
+**devattr s=8528,268 d=8528,268
+X42 Z a_224_472# VSS VPW nfet_05v0 ad=0.2132p pd=1.34u as=0.22304p ps=1.41867u w=0.82u l=0.6u
+**devattr s=8528,268 d=8528,268
+X43 Z a_224_472# VDD VNW pfet_05v0 ad=0.3782p pd=1.84u as=0.38877p ps=1.93867u w=1.22u l=0.5u
+**devattr s=15128,368 d=15128,368
+X44 VSS I a_224_472# VPW nfet_05v0 ad=0.22304p pd=1.41867u as=0.2132p ps=1.34u w=0.82u l=0.6u
+**devattr s=8528,268 d=8528,268
+X45 a_224_472# I VDD VNW pfet_05v0 ad=0.3782p pd=1.84u as=0.38877p ps=1.93867u w=1.22u l=0.5u
+**devattr s=15128,368 d=15128,368
+X46 VDD a_224_472# Z VNW pfet_05v0 ad=0.38877p pd=1.93867u as=0.3782p ps=1.84u w=1.22u l=0.5u
+**devattr s=15128,368 d=15128,368
+X47 VSS a_224_472# Z VPW nfet_05v0 ad=0.22304p pd=1.41867u as=0.2132p ps=1.34u w=0.82u l=0.6u
+**devattr s=8528,268 d=8528,268
+X48 Z a_224_472# VDD VNW pfet_05v0 ad=0.3782p pd=1.84u as=0.38877p ps=1.93867u w=1.22u l=0.5u
+**devattr s=15128,368 d=15128,368
+X49 Z a_224_472# VDD VNW pfet_05v0 ad=0.3782p pd=1.84u as=0.38877p ps=1.93867u w=1.22u l=0.5u
+**devattr s=15128,368 d=15128,368
+X50 VSS I a_224_472# VPW nfet_05v0 ad=0.22304p pd=1.41867u as=0.2132p ps=1.34u w=0.82u l=0.6u
+**devattr s=8528,268 d=8528,268
+X51 VDD a_224_472# Z VNW pfet_05v0 ad=0.38877p pd=1.93867u as=0.3782p ps=1.84u w=1.22u l=0.5u
+**devattr s=15128,368 d=15128,368
+X52 a_224_472# I VDD VNW pfet_05v0 ad=0.3782p pd=1.84u as=0.38877p ps=1.93867u w=1.22u l=0.5u
+**devattr s=21472,664 d=15128,368
+X53 VDD a_224_472# Z VNW pfet_05v0 ad=0.38877p pd=1.93867u as=0.3782p ps=1.84u w=1.22u l=0.5u
+**devattr s=15128,368 d=15128,368
+X54 VSS I a_224_472# VPW nfet_05v0 ad=0.22304p pd=1.41867u as=0.2132p ps=1.34u w=0.82u l=0.6u
+**devattr s=8528,268 d=8528,268
+X55 Z a_224_472# VSS VPW nfet_05v0 ad=0.2132p pd=1.34u as=0.22304p ps=1.41867u w=0.82u l=0.6u
+**devattr s=8528,268 d=8528,268
+X56 VSS a_224_472# Z VPW nfet_05v0 ad=0.22304p pd=1.41867u as=0.2132p ps=1.34u w=0.82u l=0.6u
+**devattr s=8528,268 d=8528,268
+X57 VSS a_224_472# Z VPW nfet_05v0 ad=0.22304p pd=1.41867u as=0.2132p ps=1.34u w=0.82u l=0.6u
+**devattr s=8528,268 d=14432,504
+X58 Z a_224_472# VDD VNW pfet_05v0 ad=0.3782p pd=1.84u as=0.38877p ps=1.93867u w=1.22u l=0.5u
+**devattr s=15128,368 d=15128,368
+X59 a_224_472# I VSS VPW nfet_05v0 ad=0.2132p pd=1.34u as=0.22304p ps=1.41867u w=0.82u l=0.6u
+**devattr s=8528,268 d=8528,268
+.ends
+
+.subckt gf180mcu_fd_sc_mcu7t5v0__buf_12 I Z VDD VNW VPW VSS
+X0 a_224_472# I VDD VNW pfet_05v0 ad=0.3782p pd=1.84u as=0.39582p ps=2.00444u w=1.22u l=0.5u
+**devattr s=15128,368 d=15128,368
+X1 VDD a_224_472# Z VNW pfet_05v0 ad=0.39582p pd=2.00444u as=0.3782p ps=1.84u w=1.22u l=0.5u
+**devattr s=15128,368 d=15128,368
+X2 Z a_224_472# VDD VNW pfet_05v0 ad=0.3782p pd=1.84u as=0.39582p ps=2.00444u w=1.22u l=0.5u
+**devattr s=15128,368 d=15128,368
+X3 a_224_472# I VSS VPW nfet_05v0 ad=0.2132p pd=1.34u as=0.2296p ps=1.47111u w=0.82u l=0.6u
+**devattr s=8528,268 d=8528,268
+X4 VSS a_224_472# Z VPW nfet_05v0 ad=0.2296p pd=1.47111u as=0.2132p ps=1.34u w=0.82u l=0.6u
+**devattr s=8528,268 d=8528,268
+X5 VSS a_224_472# Z VPW nfet_05v0 ad=0.2296p pd=1.47111u as=0.2132p ps=1.34u w=0.82u l=0.6u
+**devattr s=8528,268 d=14432,504
+X6 VDD I a_224_472# VNW pfet_05v0 ad=0.39582p pd=2.00444u as=0.3782p ps=1.84u w=1.22u l=0.5u
+**devattr s=15128,368 d=15128,368
+X7 Z a_224_472# VDD VNW pfet_05v0 ad=0.3782p pd=1.84u as=0.39582p ps=2.00444u w=1.22u l=0.5u
+**devattr s=15128,368 d=15128,368
+X8 a_224_472# I VSS VPW nfet_05v0 ad=0.2132p pd=1.34u as=0.2296p ps=1.47111u w=0.82u l=0.6u
+**devattr s=14432,504 d=8528,268
+X9 Z a_224_472# VSS VPW nfet_05v0 ad=0.2132p pd=1.34u as=0.2296p ps=1.47111u w=0.82u l=0.6u
+**devattr s=8528,268 d=8528,268
+X10 VSS a_224_472# Z VPW nfet_05v0 ad=0.2296p pd=1.47111u as=0.2132p ps=1.34u w=0.82u l=0.6u
+**devattr s=8528,268 d=8528,268
+X11 VSS a_224_472# Z VPW nfet_05v0 ad=0.2296p pd=1.47111u as=0.2132p ps=1.34u w=0.82u l=0.6u
+**devattr s=8528,268 d=8528,268
+X12 VDD a_224_472# Z VNW pfet_05v0 ad=0.39582p pd=2.00444u as=0.3782p ps=1.84u w=1.22u l=0.5u
+**devattr s=15128,368 d=15128,368
+X13 Z a_224_472# VSS VPW nfet_05v0 ad=0.2132p pd=1.34u as=0.2296p ps=1.47111u w=0.82u l=0.6u
+**devattr s=8528,268 d=8528,268
+X14 Z a_224_472# VSS VPW nfet_05v0 ad=0.2132p pd=1.34u as=0.2296p ps=1.47111u w=0.82u l=0.6u
+**devattr s=8528,268 d=8528,268
+X15 Z a_224_472# VDD VNW pfet_05v0 ad=0.3782p pd=1.84u as=0.39582p ps=2.00444u w=1.22u l=0.5u
+**devattr s=15128,368 d=15128,368
+X16 Z a_224_472# VSS VPW nfet_05v0 ad=0.2132p pd=1.34u as=0.2296p ps=1.47111u w=0.82u l=0.6u
+**devattr s=8528,268 d=8528,268
+X17 VDD I a_224_472# VNW pfet_05v0 ad=0.39582p pd=2.00444u as=0.3782p ps=1.84u w=1.22u l=0.5u
+**devattr s=15128,368 d=15128,368
+X18 VDD a_224_472# Z VNW pfet_05v0 ad=0.39582p pd=2.00444u as=0.3782p ps=1.84u w=1.22u l=0.5u
+**devattr s=15128,368 d=21472,664
+X19 VDD a_224_472# Z VNW pfet_05v0 ad=0.39582p pd=2.00444u as=0.3782p ps=1.84u w=1.22u l=0.5u
+**devattr s=15128,368 d=15128,368
+X20 Z a_224_472# VDD VNW pfet_05v0 ad=0.3782p pd=1.84u as=0.39582p ps=2.00444u w=1.22u l=0.5u
+**devattr s=15128,368 d=15128,368
+X21 Z a_224_472# VSS VPW nfet_05v0 ad=0.2132p pd=1.34u as=0.2296p ps=1.47111u w=0.82u l=0.6u
+**devattr s=8528,268 d=8528,268
+X22 a_224_472# I VDD VNW pfet_05v0 ad=0.3782p pd=1.84u as=0.39582p ps=2.00444u w=1.22u l=0.5u
+**devattr s=15128,368 d=15128,368
+X23 VSS a_224_472# Z VPW nfet_05v0 ad=0.2296p pd=1.47111u as=0.2132p ps=1.34u w=0.82u l=0.6u
+**devattr s=8528,268 d=8528,268
+X24 VDD I a_224_472# VNW pfet_05v0 ad=0.39582p pd=2.00444u as=0.3782p ps=1.84u w=1.22u l=0.5u
+**devattr s=15128,368 d=15128,368
+X25 VSS I a_224_472# VPW nfet_05v0 ad=0.2296p pd=1.47111u as=0.2132p ps=1.34u w=0.82u l=0.6u
+**devattr s=8528,268 d=8528,268
+X26 VDD a_224_472# Z VNW pfet_05v0 ad=0.39582p pd=2.00444u as=0.3782p ps=1.84u w=1.22u l=0.5u
+**devattr s=15128,368 d=15128,368
+X27 VSS a_224_472# Z VPW nfet_05v0 ad=0.2296p pd=1.47111u as=0.2132p ps=1.34u w=0.82u l=0.6u
+**devattr s=8528,268 d=8528,268
+X28 Z a_224_472# VDD VNW pfet_05v0 ad=0.3782p pd=1.84u as=0.39582p ps=2.00444u w=1.22u l=0.5u
+**devattr s=15128,368 d=15128,368
+X29 VSS I a_224_472# VPW nfet_05v0 ad=0.2296p pd=1.47111u as=0.2132p ps=1.34u w=0.82u l=0.6u
+**devattr s=8528,268 d=8528,268
+X30 a_224_472# I VDD VNW pfet_05v0 ad=0.3782p pd=1.84u as=0.39582p ps=2.00444u w=1.22u l=0.5u
+**devattr s=21472,664 d=15128,368
+X31 VDD a_224_472# Z VNW pfet_05v0 ad=0.39582p pd=2.00444u as=0.3782p ps=1.84u w=1.22u l=0.5u
+**devattr s=15128,368 d=15128,368
+X32 VSS I a_224_472# VPW nfet_05v0 ad=0.2296p pd=1.47111u as=0.2132p ps=1.34u w=0.82u l=0.6u
+**devattr s=8528,268 d=8528,268
+X33 Z a_224_472# VSS VPW nfet_05v0 ad=0.2132p pd=1.34u as=0.2296p ps=1.47111u w=0.82u l=0.6u
+**devattr s=8528,268 d=8528,268
+X34 Z a_224_472# VDD VNW pfet_05v0 ad=0.3782p pd=1.84u as=0.39582p ps=2.00444u w=1.22u l=0.5u
+**devattr s=15128,368 d=15128,368
+X35 a_224_472# I VSS VPW nfet_05v0 ad=0.2132p pd=1.34u as=0.2296p ps=1.47111u w=0.82u l=0.6u
+**devattr s=8528,268 d=8528,268
+.ends
+
+.subckt gf180mcu_fd_sc_mcu7t5v0__nor2_2 A1 A2 ZN VDD VNW VPW VSS
+X0 a_672_472# A1 ZN VNW pfet_05v0 ad=0.4087p pd=1.89u as=0.3477p ps=1.79u w=1.22u l=0.5u
+**devattr s=13908,358 d=16348,378
+X1 ZN A1 VSS VPW nfet_05v0 ad=0.1469p pd=1.085u as=0.19775p ps=1.5475u w=0.565u l=0.6u
+**devattr s=5876,217 d=5876,217
+X2 ZN A1 a_234_472# VNW pfet_05v0 ad=0.3477p pd=1.79u as=0.3782p ps=1.84u w=1.22u l=0.5u
+**devattr s=15128,368 d=13908,358
+X3 VSS A1 ZN VPW nfet_05v0 ad=0.19775p pd=1.5475u as=0.1469p ps=1.085u w=0.565u l=0.6u
+**devattr s=5876,217 d=5876,217
+X4 a_234_472# A2 VDD VNW pfet_05v0 ad=0.3782p pd=1.84u as=0.5368p ps=3.32u w=1.22u l=0.5u
+**devattr s=21472,664 d=15128,368
+X5 VDD A2 a_672_472# VNW pfet_05v0 ad=0.5368p pd=3.32u as=0.4087p ps=1.89u w=1.22u l=0.5u
+**devattr s=16348,378 d=21472,664
+X6 VSS A2 ZN VPW nfet_05v0 ad=0.19775p pd=1.5475u as=0.1469p ps=1.085u w=0.565u l=0.6u
+**devattr s=5876,217 d=9944,402
+X7 ZN A2 VSS VPW nfet_05v0 ad=0.1469p pd=1.085u as=0.19775p ps=1.5475u w=0.565u l=0.6u
+**devattr s=9944,402 d=5876,217
+.ends
+
+.subckt gf180mcu_fd_sc_mcu7t5v0__dffq_2 D CLK Q VDD VNW VPW VSS
+X0 VSS a_2304_115# Q VPW nfet_05v0 ad=0.36355p pd=2.75627u as=0.2132p ps=1.34u w=0.82u l=0.6u
+**devattr s=8528,268 d=14432,504
+X1 VSS CLK a_36_151# VPW nfet_05v0 ad=0.17956p pd=1.36133u as=0.1782p ps=1.69u w=0.405u l=0.6u
+**devattr s=7128,338 d=4212,185
+X2 Q a_2304_115# VSS VPW nfet_05v0 ad=0.2132p pd=1.34u as=0.36355p ps=2.75627u w=0.82u l=0.6u
+**devattr s=14432,504 d=8528,268
+X3 a_2304_115# a_2011_527# VSS VPW nfet_05v0 ad=0.176p pd=1.68u as=0.17734p ps=1.34452u w=0.4u l=0.6u
+**devattr s=5680,228 d=7040,336
+X4 a_1004_159# D a_836_159# VPW nfet_05v0 ad=0.207p pd=1.51u as=43.2f ps=0.6u w=0.36u l=0.6u
+**devattr s=1728,120 d=8280,302
+X5 a_1004_159# D a_880_527# VNW pfet_05v0 ad=0.1872p pd=1.4u as=54f ps=0.66u w=0.36u l=0.5u
+**devattr s=2160,132 d=7488,280
+X6 a_2011_527# a_36_151# a_1376_115# VNW pfet_05v0 ad=0.1665p pd=1.285u as=0.1791p ps=1.355u w=0.36u l=0.5u
+**devattr s=7164,271 d=6660,257
+X7 a_2296_527# a_448_472# a_2011_527# VNW pfet_05v0 ad=50.4f pd=0.64u as=0.1665p ps=1.285u w=0.36u l=0.5u
+**devattr s=6660,257 d=2016,128
+X8 a_1376_115# a_1004_159# VDD VNW pfet_05v0 ad=0.1791p pd=1.355u as=0.16651p ps=1.01878u w=0.36u l=0.5u
+**devattr s=4176,188 d=7164,271
+X9 VDD CLK a_36_151# VNW pfet_05v0 ad=0.40009p pd=2.44791u as=0.3806p ps=2.61u w=0.865u l=0.5u
+**devattr s=15224,522 d=8996,277
+X10 VDD a_2304_115# Q VNW pfet_05v0 ad=0.56428p pd=3.45254u as=0.3172p ps=1.74u w=1.22u l=0.5u
+**devattr s=12688,348 d=34160,768
+X11 VSS a_1376_115# a_1328_159# VPW nfet_05v0 ad=0.15961p pd=1.21007u as=43.2f ps=0.6u w=0.36u l=0.6u
+**devattr s=1728,120 d=10548,365
+X12 a_2011_527# a_448_472# a_1376_115# VPW nfet_05v0 ad=93.59999f pd=0.88u as=93.59999f ps=0.88u w=0.36u l=0.6u
+**devattr s=3744,176 d=3744,176
+X13 a_448_472# a_36_151# VDD VNW pfet_05v0 ad=0.3806p pd=2.61u as=0.40009p ps=2.44791u w=0.865u l=0.5u
+**devattr s=8996,277 d=15224,522
+X14 Q a_2304_115# VDD VNW pfet_05v0 ad=0.3172p pd=1.74u as=0.56428p ps=3.45254u w=1.22u l=0.5u
+**devattr s=21472,664 d=12688,348
+X15 a_1376_115# a_1004_159# VSS VPW nfet_05v0 ad=93.59999f pd=0.88u as=0.15961p ps=1.21007u w=0.36u l=0.6u
+**devattr s=10548,365 d=3744,176
+X16 VSS a_2304_115# a_2256_159# VPW nfet_05v0 ad=0.15961p pd=1.21007u as=43.2f ps=0.6u w=0.36u l=0.6u
+**devattr s=1728,120 d=5680,228
+X17 a_836_159# a_36_151# VSS VPW nfet_05v0 ad=43.2f pd=0.6u as=0.15961p ps=1.21007u w=0.36u l=0.6u
+**devattr s=6336,320 d=1728,120
+X18 a_448_472# a_36_151# VSS VPW nfet_05v0 ad=0.1782p pd=1.69u as=0.17956p ps=1.36133u w=0.405u l=0.6u
+**devattr s=4212,185 d=7128,338
+X19 a_2256_159# a_36_151# a_2011_527# VPW nfet_05v0 ad=43.2f pd=0.6u as=93.59999f ps=0.88u w=0.36u l=0.6u
+**devattr s=3744,176 d=1728,120
+X20 a_880_527# a_448_472# VDD VNW pfet_05v0 ad=54f pd=0.66u as=0.16651p ps=1.01878u w=0.36u l=0.5u
+**devattr s=18216,650 d=2160,132
+X21 a_1348_527# a_36_151# a_1004_159# VNW pfet_05v0 ad=43.2f pd=0.6u as=0.1872p ps=1.4u w=0.36u l=0.5u
+**devattr s=7488,280 d=1728,120
+X22 a_1328_159# a_448_472# a_1004_159# VPW nfet_05v0 ad=43.2f pd=0.6u as=0.207p ps=1.51u w=0.36u l=0.6u
+**devattr s=8280,302 d=1728,120
+X23 VDD a_1376_115# a_1348_527# VNW pfet_05v0 ad=0.16651p pd=1.01878u as=43.2f ps=0.6u w=0.36u l=0.5u
+**devattr s=1728,120 d=4176,188
+X24 VDD a_2304_115# a_2296_527# VNW pfet_05v0 ad=0.16651p pd=1.01878u as=50.4f ps=0.64u w=0.36u l=0.5u
+**devattr s=2016,128 d=9200,308
+X25 a_2304_115# a_2011_527# VDD VNW pfet_05v0 ad=0.352p pd=2.48u as=0.37002p ps=2.26396u w=0.8u l=0.5u
+**devattr s=9200,308 d=14080,496
+.ends
+
+.subckt gf180mcu_fd_sc_mcu7t5v0__clkinv_1 I ZN VDD VNW VPW VSS
+X0 ZN I VSS VPW nfet_05v0 ad=0.2112p pd=1.84u as=0.2112p ps=1.84u w=0.48u l=0.6u
+**devattr s=8448,368 d=8448,368
+X1 ZN I VDD VNW pfet_05v0 ad=0.5368p pd=3.32u as=0.5368p ps=3.32u w=1.22u l=0.5u
+**devattr s=21472,664 d=21472,664
+.ends
+
+.subckt gf180mcu_fd_sc_mcu7t5v0__dffq_4 D CLK Q VDD VNW VPW VSS
+X0 VSS CLK a_36_151# VPW nfet_05v0 ad=0.15128p pd=1.03803u as=0.1782p ps=1.69u w=0.405u l=0.6u
+**devattr s=7128,338 d=4212,185
+X1 VDD a_2011_527# a_2304_115# VNW pfet_05v0 ad=0.3404p pd=2.08299u as=0.2457p ps=1.465u w=0.945u l=0.5u
+**devattr s=9828,293 d=15430,384
+X2 a_1004_159# D a_836_159# VPW nfet_05v0 ad=0.207p pd=1.51u as=43.2f ps=0.6u w=0.36u l=0.6u
+**devattr s=1728,120 d=8280,302
+X3 VSS a_2304_115# Q VPW nfet_05v0 ad=0.30443p pd=2.08887u as=0.2119p ps=1.335u w=0.815u l=0.6u
+**devattr s=8476,267 d=14344,502
+X4 a_2304_115# a_2011_527# VSS VPW nfet_05v0 ad=0.2119p pd=1.335u as=0.30443p ps=2.08887u w=0.815u l=0.6u
+**devattr s=9332,311 d=8476,267
+X5 a_1004_159# D a_880_527# VNW pfet_05v0 ad=0.1872p pd=1.4u as=54f ps=0.66u w=0.36u l=0.5u
+**devattr s=2160,132 d=7488,280
+X6 a_2011_527# a_36_151# a_1376_115# VNW pfet_05v0 ad=0.1665p pd=1.285u as=0.1791p ps=1.355u w=0.36u l=0.5u
+**devattr s=7164,271 d=6660,257
+X7 a_2296_527# a_448_472# a_2011_527# VNW pfet_05v0 ad=50.4f pd=0.64u as=0.1665p ps=1.285u w=0.36u l=0.5u
+**devattr s=6660,257 d=2016,128
+X8 Q a_2304_115# VDD VNW pfet_05v0 ad=0.4392p pd=1.94u as=0.43946p ps=2.68915u w=1.22u l=0.5u
+**devattr s=15430,384 d=17568,388
+X9 VSS a_2304_115# Q VPW nfet_05v0 ad=0.30443p pd=2.08887u as=0.2119p ps=1.335u w=0.815u l=0.6u
+**devattr s=8476,267 d=8476,267
+X10 a_1376_115# a_1004_159# VDD VNW pfet_05v0 ad=0.1791p pd=1.355u as=0.12968p ps=0.79352u w=0.36u l=0.5u
+**devattr s=4176,188 d=7164,271
+X11 VDD CLK a_36_151# VNW pfet_05v0 ad=0.31158p pd=1.90665u as=0.3806p ps=2.61u w=0.865u l=0.5u
+**devattr s=15224,522 d=8996,277
+X12 VDD a_2304_115# Q VNW pfet_05v0 ad=0.43946p pd=2.68915u as=0.4392p ps=1.94u w=1.22u l=0.5u
+**devattr s=17568,388 d=12688,348
+X13 VSS a_1376_115# a_1328_159# VPW nfet_05v0 ad=0.13447p pd=0.92269u as=43.2f ps=0.6u w=0.36u l=0.6u
+**devattr s=1728,120 d=10548,365
+X14 a_2011_527# a_448_472# a_1376_115# VPW nfet_05v0 ad=93.59999f pd=0.88u as=93.59999f ps=0.88u w=0.36u l=0.6u
+**devattr s=3744,176 d=3744,176
+X15 Q a_2304_115# VDD VNW pfet_05v0 ad=0.4392p pd=1.94u as=0.43946p ps=2.68915u w=1.22u l=0.5u
+**devattr s=12688,348 d=17568,388
+X16 a_448_472# a_36_151# VDD VNW pfet_05v0 ad=0.3806p pd=2.61u as=0.31158p ps=1.90665u w=0.865u l=0.5u
+**devattr s=8996,277 d=15224,522
+X17 Q a_2304_115# VSS VPW nfet_05v0 ad=0.2119p pd=1.335u as=0.30443p ps=2.08887u w=0.815u l=0.6u
+**devattr s=8476,267 d=8476,267
+X18 a_1376_115# a_1004_159# VSS VPW nfet_05v0 ad=93.59999f pd=0.88u as=0.13447p ps=0.92269u w=0.36u l=0.6u
+**devattr s=10548,365 d=3744,176
+X19 VSS a_2304_115# a_2256_159# VPW nfet_05v0 ad=0.13447p pd=0.92269u as=43.2f ps=0.6u w=0.36u l=0.6u
+**devattr s=1728,120 d=9332,311
+X20 Q a_2304_115# VSS VPW nfet_05v0 ad=0.2119p pd=1.335u as=0.30443p ps=2.08887u w=0.815u l=0.6u
+**devattr s=10432,291 d=8476,267
+X21 a_836_159# a_36_151# VSS VPW nfet_05v0 ad=43.2f pd=0.6u as=0.13447p ps=0.92269u w=0.36u l=0.6u
+**devattr s=6336,320 d=1728,120
+X22 a_448_472# a_36_151# VSS VPW nfet_05v0 ad=0.1782p pd=1.69u as=0.15128p ps=1.03803u w=0.405u l=0.6u
+**devattr s=4212,185 d=7128,338
+X23 a_2256_159# a_36_151# a_2011_527# VPW nfet_05v0 ad=43.2f pd=0.6u as=93.59999f ps=0.88u w=0.36u l=0.6u
+**devattr s=3744,176 d=1728,120
+X24 a_880_527# a_448_472# VDD VNW pfet_05v0 ad=54f pd=0.66u as=0.12968p ps=0.79352u w=0.36u l=0.5u
+**devattr s=18216,650 d=2160,132
+X25 a_1348_527# a_36_151# a_1004_159# VNW pfet_05v0 ad=43.2f pd=0.6u as=0.1872p ps=1.4u w=0.36u l=0.5u
+**devattr s=7488,280 d=1728,120
+X26 VDD a_2304_115# Q VNW pfet_05v0 ad=0.43946p pd=2.68915u as=0.4392p ps=1.94u w=1.22u l=0.5u
+**devattr s=17568,388 d=21472,664
+X27 a_1328_159# a_448_472# a_1004_159# VPW nfet_05v0 ad=43.2f pd=0.6u as=0.207p ps=1.51u w=0.36u l=0.6u
+**devattr s=8280,302 d=1728,120
+X28 VDD a_1376_115# a_1348_527# VNW pfet_05v0 ad=0.12968p pd=0.79352u as=43.2f ps=0.6u w=0.36u l=0.5u
+**devattr s=1728,120 d=4176,188
+X29 VSS a_2011_527# a_2304_115# VPW nfet_05v0 ad=0.30443p pd=2.08887u as=0.2119p ps=1.335u w=0.815u l=0.6u
+**devattr s=8476,267 d=10432,291
+X30 VDD a_2304_115# a_2296_527# VNW pfet_05v0 ad=0.12968p pd=0.79352u as=50.4f ps=0.64u w=0.36u l=0.5u
+**devattr s=2016,128 d=10476,337
+X31 a_2304_115# a_2011_527# VDD VNW pfet_05v0 ad=0.2457p pd=1.465u as=0.3404p ps=2.08299u w=0.945u l=0.5u
+**devattr s=10476,337 d=9828,293
+.ends
+
+.subckt gf180mcu_fd_sc_mcu7t5v0__clkinv_2 I ZN VDD VNW VPW VSS
+X0 ZN I VSS VPW nfet_05v0 ad=0.1248p pd=1u as=0.2112p ps=1.84u w=0.48u l=0.6u
+**devattr s=8448,368 d=4992,200
+X1 VDD I ZN VNW pfet_05v0 ad=0.5368p pd=3.32u as=0.3782p ps=1.84u w=1.22u l=0.5u
+**devattr s=15128,368 d=21472,664
+X2 ZN I VDD VNW pfet_05v0 ad=0.3782p pd=1.84u as=0.5368p ps=3.32u w=1.22u l=0.5u
+**devattr s=21472,664 d=15128,368
+X3 VSS I ZN VPW nfet_05v0 ad=0.2112p pd=1.84u as=0.1248p ps=1u w=0.48u l=0.6u
+**devattr s=4992,200 d=8448,368
+.ends
+
+.subckt digital clk rst_n ui_in[0] ui_in[1] ui_in[2] ui_in[3] ui_in[4] ui_in[5] ui_in[6]
++ ui_in[7] uio_in[0] uio_in[1] uio_in[2] uio_in[3] uio_in[4] uio_in[5] uio_in[6] uio_in[7]
++ uio_oe[0] uio_oe[1] uio_oe[2] uio_oe[3] uio_oe[4] uio_oe[5] uio_oe[6] uio_oe[7]
++ uio_out[0] uio_out[1] uio_out[2] uio_out[3] uio_out[4] uio_out[5] uio_out[6] uo_out[0]
++ uo_out[1] uo_out[2] uo_out[3] uo_out[4] uo_out[5] uo_out[6] uo_out[7] vco_in uio_out[7]
++ VDD VSS
+XFILLER_10_317 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_64
+XFILLER_9_104 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_8
+XFILLER_6_107 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_32
+XFILLER_7_416 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+XFILLER_9_66 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+XFILLER_0_444 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_32
+XFILLER_3_282 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_64
+XFILLER_0_274 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_32
+XFILLER_12_77 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+XFILLER_3_2 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_64
+XFILLER_2_177 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_64
+XFILLER_0_36 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_32
+XFILLER_3_486 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+XFILLER_0_478 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_32
+Xrebuffer29 _30_/Q _21_/A1 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__buf_8
+XFILLER_12_12 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_8
+XFILLER_5_142 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_64
+XFILLER_9_492 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_32
+XFILLER_2_101 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+XFILLER_6_451 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+Xload_slew10 uio_out[1] _25_/A4 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__buf_8
+XFILLER_8_387 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_64
+XFILLER_11_2 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_64
+XFILLER_5_346 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+XFILLER_3_422 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_64
+XFILLER_7_227 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_8
+X_29_ _29_/A1 _29_/A2 _29_/B _34_/D VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__aoi21_1
+XFILLER_6_37 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_64
+XFILLER_8_311 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+XFILLER_12_25 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_8
+XFILLER_2_317 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_64
+XFILLER_11_416 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+XFILLER_1_2 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_64
+Xclkload0 _31_/CLK clkload0/Z VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__clkbuf_2
+XFILLER_7_206 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+X_28_ _29_/A2 _29_/A1 _28_/B _29_/B VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__oai21_1
+XFILLER_4_381 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+XFILLER_1_72 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_64
+X_27_ _27_/A1 _27_/A2 _27_/B _33_/D VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__aoi21_1
+XFILLER_3_276 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+XFILLER_12_342 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_32
+XFILLER_1_352 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_64
+XFILLER_10_451 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+XFILLER_9_282 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_64
+X_26_ _28_/B _29_/A2 _27_/B VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__nand2_1
+XFILLER_12_376 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_32
+XFILLER_7_72 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_64
+XFILLER_8_177 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_16
+XFILLER_5_136 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+XFILLER_9_486 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+X_25_ _25_/A1 _25_/A2 _25_/A3 _25_/A4 _29_/A2 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__nand4_4
+XFILLER_3_212 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_64
+Xdigital_20 uo_out[7] VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__tiel
+XFILLER_4_521 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+XFILLER_1_524 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+XFILLER_8_101 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+XFILLER_8_123 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+Xload_slew2 uio_out[5] _16_/I VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__clkbuf_1
+XFILLER_2_107 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_64
+XFILLER_6_457 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_64
+XFILLER_3_416 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+X_24_ _24_/A1 _24_/A2 _32_/D VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__nor2_1
+Xdigital_21 uio_oe[0] VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__tieh
+XFILLER_4_171 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+XFILLER_9_422 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_64
+X_23_ _27_/A2 _28_/B _24_/A1 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__nand2_1
+Xdigital_22 uio_oe[1] VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__tieh
+Xdigital uio_out[6] VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__tiel
+XFILLER_0_206 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_32
+XFILLER_8_317 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_64
+Xload_slew4 uio_out[4] _25_/A3 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__buf_4
+XFILLER_1_142 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_64
+XFILLER_5_492 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_32
+XFILLER_2_451 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+XFILLER_1_66 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+X_22_ _25_/A4 _32_/Q _25_/A1 _27_/A2 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__nand3_2
+Xclkbuf_0_vco_in_regs clkbuf_regs_0_vco_in/Z clkbuf_0_vco_in_regs/Z VDD VDD VSS VSS
++ gf180mcu_fd_sc_mcu7t5v0__clkbuf_16
+Xdigital_23 uio_oe[2] VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__tieh
+Xdigital_12 uio_out[7] VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__tiel
+XFILLER_4_387 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_64
+XFILLER_1_346 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+XFILLER_8_2 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_32
+XFILLER_6_235 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_8
+X_21_ _21_/A1 _31_/Q _32_/Q _24_/A2 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__aoi21_1
+Xdigital_13 uo_out[0] VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__tiel
+Xdigital_24 uio_oe[3] VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__tieh
+XFILLER_7_66 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+XFILLER_7_352 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_64
+XFILLER_4_311 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+Xload_slew6 uio_out[3] _25_/A2 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__buf_2
+XFILLER_9_222 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+XFILLER_10_457 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_64
+XFILLER_6_247 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_64
+X_20_ _21_/A1 _31_/Q _20_/B _31_/D VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__aoi21_1
+Xinput1 rst_n _28_/B VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__dlyb_1
+Xdigital_14 uo_out[1] VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__tiel
+XFILLER_3_206 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+Xdigital_25 uio_oe[4] VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__tieh
+Xclkbuf_0_vco_in vco_in _53_/I VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__buf_20
+Xdigital_15 uo_out[2] VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__tiel
+Xdigital_26 uio_oe[5] VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__tieh
+XFILLER_7_524 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+XFILLER_8_107 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_16
+Xload_slew8 uio_out[2] _25_/A1 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__buf_8
+XFILLER_9_416 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+XFILLER_6_2 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_32
+XFILLER_5_282 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_64
+Xdigital_16 uo_out[3] VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__tiel
+Xdigital_27 uio_oe[6] VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__tieh
+XFILLER_2_241 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+XFILLER_4_37 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_64
+XFILLER_4_177 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_64
+XFILLER_1_136 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+XFILLER_5_486 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+Xdigital_17 uo_out[4] VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__tiel
+Xdigital_28 uio_oe[7] VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__tieh
+XFILLER_12_308 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_32
+XFILLER_11_352 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_64
+XFILLER_12_138 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+XFILLER_4_101 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+XFILLER_8_451 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+XFILLER_2_457 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_64
+Xclkbuf_1_1__f_vco_in_regs clkbuf_0_vco_in_regs/Z _31_/CLK VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__clkbuf_16
+XFILLER_10_247 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_64
+Xdigital_18 uo_out[5] VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__tiel
+XFILLER_10_37 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_64
+XFILLER_7_346 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+XFILLER_5_422 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_64
+Xdigital_19 uo_out[6] VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__tiel
+XFILLER_11_524 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+XFILLER_4_2 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_32
+XFILLER_4_317 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_64
+XFILLER_0_512 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_16
+XFILLER_0_342 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_32
+XFILLER_0_172 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_32
+XFILLER_5_72 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_64
+XFILLER_1_492 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_32
+XFILLER_6_381 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+XFILLER_0_376 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_32
+XFILLER_5_276 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+Xclkbuf_regs_0_vco_in vco_in clkbuf_regs_0_vco_in/Z VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__clkbuf_16
+XFILLER_11_72 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_16
+XFILLER_3_352 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_64
+XFILLER_2_247 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_64
+XFILLER_11_346 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+XFILLER_2_2 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_32
+XFILLER_5_212 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_64
+XFILLER_6_521 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+XFILLER_3_524 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+XFILLER_4_107 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_64
+XFILLER_8_457 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_64
+XFILLER_5_416 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+XFILLER_10_2 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_32
+X_53_ _53_/I uio_out[0] VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__buf_12
+XFILLER_1_282 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_64
+XFILLER_10_381 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+XFILLER_6_193 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+X_19_ _31_/Q _21_/A1 _28_/B _20_/B VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__oai21_1
+XFILLER_12_410 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_32
+XFILLER_5_66 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+XFILLER_1_486 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+XFILLER_0_2 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_32
+X_18_ _21_/A1 _18_/A2 _30_/D VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__nor2_2
+XFILLER_12_444 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_32
+XFILLER_3_142 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_64
+XFILLER_7_492 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_32
+XFILLER_12_285 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_8
+XFILLER_12_274 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+XFILLER_4_451 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+XFILLER_11_66 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+XFILLER_11_88 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_8
+XFILLER_6_387 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_64
+X_34_ _34_/D _34_/CLK _34_/Q VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__dffq_2
+XFILLER_3_346 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+X_17_ _28_/B _18_/A2 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+XFILLER_12_478 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_32
+XFILLER_1_422 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_64
+Xwire3 _34_/Q uio_out[5] VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__buf_4
+XFILLER_10_521 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+XFILLER_9_352 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_64
+XFILLER_6_311 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+X_33_ _33_/D _34_/CLK _33_/Q VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__dffq_4
+Xclkbuf_1_0__f_vco_in_regs clkbuf_0_vco_in_regs/Z _34_/CLK VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__clkbuf_16
+X_16_ _16_/I _29_/A1 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_2
+XFILLER_12_298 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_8
+XFILLER_8_247 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_64
+XFILLER_5_206 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+XFILLER_2_37 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_64
+X_32_ _32_/D _34_/CLK _32_/Q VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__dffq_4
+XFILLER_2_381 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+X_15_ _33_/Q _27_/A1 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+XFILLER_10_171 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+XFILLER_0_70 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_32
+XFILLER_0_104 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_32
+XFILLER_9_524 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+Xwire5 _33_/Q uio_out[4] VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__buf_8
+XFILLER_1_276 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+XFILLER_9_2 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_64
+X_31_ _31_/D _31_/CLK _31_/Q VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__dffq_4
+XFILLER_8_37 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_64
+XFILLER_0_308 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_32
+XFILLER_11_492 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_32
+XFILLER_0_138 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_32
+XFILLER_7_271 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_8
+XFILLER_7_282 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_64
+XFILLER_4_241 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+X_30_ _30_/D _31_/CLK _30_/Q VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__dffq_4
+XFILLER_10_387 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_64
+Xwire11 _30_/Q uio_out[1] VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__buf_8
+XFILLER_6_177 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_16
+XFILLER_3_136 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+XFILLER_7_486 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+XFILLER_1_212 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_64
+Xwire7 _32_/Q uio_out[3] VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__buf_8
+XFILLER_2_521 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+XFILLER_10_311 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+XFILLER_3_72 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_64
+XFILLER_6_101 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+XFILLER_4_457 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_64
+XFILLER_1_416 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+XFILLER_9_346 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+XFILLER_7_2 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_64
+XFILLER_7_422 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_64
+XFILLER_2_171 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+XFILLER_9_72 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_32
+XFILLER_12_259 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_8
+Xwire9 _31_/Q uio_out[2] VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__buf_8
+XFILLER_6_317 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_64
+XFILLER_11_282 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_64
+XFILLER_3_492 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_32
+XFILLER_8_381 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+XFILLER_2_387 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_64
+XFILLER_12_40 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+XFILLER_12_51 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_8
+XFILLER_11_486 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+XFILLER_5_352 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_64
+XFILLER_2_311 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+XFILLER_10_101 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+XFILLER_5_2 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_64
+XFILLER_4_247 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_64
+XFILLER_1_206 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+XFILLER_3_66 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+XFILLER_12_64 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+XFILLER_11_422 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_64
+XFILLER_11_274 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+XFILLER_7_212 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+XFILLER_0_410 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_32
+XFILLER_8_521 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+XFILLER_5_524 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+XFILLER_0_240 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_32
+.ends
+
 .subckt tt_um_algofoogle_gf_analog clk ena rst_n ua[0] ua[1] ua[2] ua[3] ua[4] ua[5]
 + ua[6] ua[7] ui_in[0] ui_in[1] ui_in[2] ui_in[3] ui_in[4] ui_in[5] ui_in[6] ui_in[7]
 + uio_in[0] uio_in[1] uio_in[2] uio_in[3] uio_in[4] uio_in[5] uio_in[6] uio_in[7]
@@ -68,5 +1224,11 @@ X2 VCC vbiasp vbiasp VCC pfet_03v3 ad=1.36p pd=5.28u as=2p ps=9u w=4u l=0.28u
 + VDPWR VGND
 Xcsringosc_0 ua[0] VDPWR VGND csringosc_0/vbiasp csringosc_0/vbiasn csringosc_0/osc_raw
 + ua[1] csringosc
+Xdigital_0 clk rst_n ui_in[0] ui_in[1] ui_in[2] ui_in[3] ui_in[4] ui_in[5] ui_in[6]
++ ui_in[7] uio_in[0] uio_in[1] uio_in[2] uio_in[3] uio_in[4] uio_in[5] uio_in[6] uio_in[7]
++ uio_oe[0] uio_oe[1] uio_oe[2] uio_oe[3] uio_oe[4] uio_oe[5] uio_oe[6] uio_oe[7]
++ uio_out[0] uio_out[1] uio_out[2] uio_out[3] uio_out[4] uio_out[5] uio_out[6] uo_out[0]
++ uo_out[1] uo_out[2] uo_out[3] uo_out[4] uo_out[5] uo_out[6] uo_out[7] ua[1] uio_out[7]
++ VDPWR VGND digital
 .ends
 

@@ -20,11 +20,29 @@ module tt_um_algofoogle_gf_analog (
     input  wire       rst_n     // reset_n - low to reset
 );
 
+    wire vco_out;
+
+    wire vin = ua[0];
+    assign ua[1] = vco_out;
+
+    digital digital_0 (
+        .VDD        (VDPWR),
+        .VSS        (VGND),
+        .clk        (clk),
+        .rst_n      (rst_n),
+        .vco_in     (vco_out),
+        .ui_in      (ui_in),
+        .uio_in     (uio_in),
+        .uio_oe     (uio_oe),
+        .uio_out    (uio_out),
+        .uo_out     (uo_out)
+    );
+
     csringosc csringosc_0 (
         .VCC    (VDPWR),
         .VSS    (VGND),
-        .vin    (ua[0]),
-        .osc_out(ua[1])
+        .vin    (vin),
+        .osc_out(vco_out)
         // .vbiasp(),
         // .vbiasn(),
         // .osc_raw(),

@@ -11,7 +11,7 @@ if {$project eq "tt_um_algofoogle_gf_analog"} {
     readnet spice ../xschem/simulation/csringosc.spice $schem
 
     # Add GL verilog of digital block(s) (i.e. flat file from LibreLane hardening):
-    # readnet verilog ../verilog/gl/digital.pnl.v $schem
+    readnet verilog ../verilog/gl/digital.pnl.v $schem
 
     # Top-level abstract integration verilog, e.g. main project.v, or LVS-tweaked version:
     # readnet verilog ../src/LVS-project.v $schem
