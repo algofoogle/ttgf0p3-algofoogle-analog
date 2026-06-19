@@ -9,6 +9,7 @@ if {$project eq "tt_um_algofoogle_gf_analog"} {
 
     # Add spice files of any analog block(s), e.g:
     readnet spice ../xschem/simulation/csringosc.spice $schem
+    readnet spice ../xschem/simulation/bufinv_2.spice $schem
 
     # Add GL verilog of digital block(s) (i.e. flat file from LibreLane hardening):
     readnet verilog ../verilog/gl/digital.pnl.v $schem

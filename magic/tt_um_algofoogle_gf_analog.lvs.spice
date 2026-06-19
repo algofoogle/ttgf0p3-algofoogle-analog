@@ -1,5 +1,12 @@
 * NGSPICE file created from tt_um_algofoogle_gf_analog.ext - technology: gf180mcuD
 
+.subckt bufinv_2 A Y VSS VCC
+X0 Y A VCC VCC pfet_03v3 ad=2.08p pd=9.04u as=2p ps=9u w=4u l=0.28u
+**devattr s=160000,2000 d=83200,1808
+X1 Y A VSS VSS nfet_03v3 ad=1.04p pd=5.04u as=1p ps=5u w=2u l=0.28u
+**devattr s=74000,1200 d=41600,1008
+.ends
+
 .subckt csrostage VCC VbiasP VSS VbiasN A Y
 X0 a_280_590# VbiasP VCC VCC pfet_03v3 ad=0.59348p pd=4.36957u as=1.5p ps=7u w=3u l=0.3u
 **devattr s=132000,1640 d=18200,670
@@ -1222,13 +1229,19 @@ XFILLER_0_240 VDD VDD VSS VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_32
 + uio_out[0] uio_out[1] uio_out[2] uio_out[3] uio_out[4] uio_out[5] uio_out[6] uio_out[7]
 + uo_out[0] uo_out[1] uo_out[2] uo_out[3] uo_out[4] uo_out[5] uo_out[6] uo_out[7]
 + VDPWR VGND
+Xua1buf1 ua1buf1/A ua[1] VGND VDPWR bufinv_2
 Xcsringosc_0 ua[0] VDPWR VGND csringosc_0/vbiasp csringosc_0/vbiasn csringosc_0/osc_raw
-+ ua[1] csringosc
++ ua1buf0/A csringosc
+Xtxdigbuf0 ua1buf0/A txdigbuf1/A VGND VDPWR bufinv_2
+Xtxdigbuf1 txdigbuf1/A txdigbuf1/Y VGND VDPWR bufinv_2
 Xdigital_0 clk rst_n ui_in[0] ui_in[1] ui_in[2] ui_in[3] ui_in[4] ui_in[5] ui_in[6]
 + ui_in[7] uio_in[0] uio_in[1] uio_in[2] uio_in[3] uio_in[4] uio_in[5] uio_in[6] uio_in[7]
 + uio_oe[0] uio_oe[1] uio_oe[2] uio_oe[3] uio_oe[4] uio_oe[5] uio_oe[6] uio_oe[7]
 + uio_out[0] uio_out[1] uio_out[2] uio_out[3] uio_out[4] uio_out[5] uio_out[6] uo_out[0]
-+ uo_out[1] uo_out[2] uo_out[3] uo_out[4] uo_out[5] uo_out[6] uo_out[7] ua[1] uio_out[7]
-+ VDPWR VGND digital
++ uo_out[1] uo_out[2] uo_out[3] uo_out[4] uo_out[5] uo_out[6] uo_out[7] rxdigbuf1/Y
++ uio_out[7] VDPWR VGND digital
+Xrxdigbuf0 txdigbuf1/Y rxdigbuf1/A VGND VDPWR bufinv_2
+Xrxdigbuf1 rxdigbuf1/A rxdigbuf1/Y VGND VDPWR bufinv_2
+Xua1buf0 ua1buf0/A ua1buf1/A VGND VDPWR bufinv_2
 .ends
 

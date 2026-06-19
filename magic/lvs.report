@@ -500,6 +500,27 @@ VSS                                        |VSS
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes gf180mcu_fd_sc_mcu7t5v0__clkinv_2 and gf180mcu_fd_sc_mcu7t5v0__clkinv_2 are equivalent.
+
+Subcircuit summary:
+Circuit 1: bufinv_2                        |Circuit 2: bufinv_2                        
+-------------------------------------------|-------------------------------------------
+pfet_03v3 (1)                              |pfet_03v3 (1)                              
+nfet_03v3 (1)                              |nfet_03v3 (1)                              
+Number of devices: 2                       |Number of devices: 2                       
+Number of nets: 4                          |Number of nets: 4                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: bufinv_2                        |Circuit 2: bufinv_2                        
+-------------------------------------------|-------------------------------------------
+Y                                          |Y                                          
+A                                          |A                                          
+VSS                                        |VSS                                        
+VCC                                        |VCC                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes bufinv_2 and bufinv_2 are equivalent.
 Flattening unmatched subcell nfet_03v3_KT5AJW in circuit csringosc (0)(1 instance)
 Flattening unmatched subcell ppolyf_u_1k_ACAPAA in circuit csringosc (0)(1 instance)
 
@@ -709,17 +730,17 @@ Cell tt_um_algofoogle_gf_analog (1) disconnected node: ena
 Subcircuit summary:
 Circuit 1: tt_um_algofoogle_gf_analog      |Circuit 2: tt_um_algofoogle_gf_analog      
 -------------------------------------------|-------------------------------------------
+bufinv_2 (6)                               |bufinv_2 (6)                               
 csringosc (1)                              |csringosc (1)                              
 digital (1)                                |digital (1)                                
-Number of devices: 2                       |Number of devices: 2                       
-Number of nets: 49                         |Number of nets: 49                         
+Number of devices: 8                       |Number of devices: 8                       
+Number of nets: 55                         |Number of nets: 55                         
 ---------------------------------------------------------------------------------------
 Netlists match uniquely.
 
 Subcircuit pins:
 Circuit 1: tt_um_algofoogle_gf_analog      |Circuit 2: tt_um_algofoogle_gf_analog      
 -------------------------------------------|-------------------------------------------
-ua[1]                                      |ua[1]                                      
 VDPWR                                      |VDPWR                                      
 VGND                                       |VGND                                       
 ua[0]                                      |ua[0]                                      
@@ -765,6 +786,7 @@ uo_out[3]                                  |uo_out[3]
 uo_out[2]                                  |uo_out[2]                                  
 uo_out[1]                                  |uo_out[1]                                  
 uo_out[0]                                  |uo_out[0]                                  
+ua[1]                                      |ua[1]                                      
 ena                                        |ena                                        
 ua[2]                                      |ua[2]                                      
 ua[3]                                      |ua[3]                                      
