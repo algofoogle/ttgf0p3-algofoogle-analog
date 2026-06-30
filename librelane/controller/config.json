@@ -1,0 +1,75 @@
+{
+  "//": "This is the 7T (standard cell height and speed) version",
+  "DESIGN_NAME": "controller",
+  "VERILOG_FILES": [
+    "dir::../../verilog/rtl/controller/vga_sync.v",
+    "dir::../../verilog/rtl/controller/controller.v"
+  ],
+  "PL_TARGET_DENSITY_PCT": 40,
+  "CLOCK_PORT": "clk",
+  "CLOCK_PERIOD": 37, "//": "37ns is about 27MHz, supporting 1440x900-div4 (360x900) as well as VGA 640x480",
+  "DIE_AREA": "0 0 192 170",
+
+  "FP_PIN_ORDER_CFG": "dir::pin_order.cfg",
+  
+  "RUN_CTS": 1,
+  "PL_RESIZER_HOLD_SLACK_MARGIN": 0.1,
+  "GRT_RESIZER_HOLD_SLACK_MARGIN": 0.05,
+
+  "//PL_RESIZER_SETUP_SLACK_MARGIN": 0.2,
+  "//PL_RESIZER_SETUP_MAX_BUFFER_PCT": 100,
+
+  "RUN_POST_GRT_RESIZER_TIMING": 1,
+  "RUN_POST_GRT_DESIGN_REPAIR": 1,
+
+  "RUN_LINTER": 1,
+  "LINTER_INCLUDE_PDK_MODELS": 1,
+  "RUN_KLAYOUT_XOR": 1,
+  "RUN_KLAYOUT_DRC": 1,
+  "DESIGN_REPAIR_BUFFER_OUTPUT_PORTS": 0,
+  "TOP_MARGIN_MULT": 1,
+  "BOTTOM_MARGIN_MULT": 1,
+  "LEFT_MARGIN_MULT": 6,
+  "RIGHT_MARGIN_MULT": 6,
+  "FP_SIZING": "absolute",
+  "GRT_ALLOW_CONGESTION": 1,
+  "FP_IO_HLENGTH": 1,
+  "FP_IO_VLENGTH": 1,
+  "IO_PIN_V_LAYER": "Metal4",
+  "FP_PDN_VPITCH": 38.87,
+  "FP_PDN_MULTILAYER": 0,
+  "RT_MAX_LAYER": "Metal4",
+  "MAGIC_DEF_LABELS": 0,
+  "MAGIC_WRITE_LEF_PINONLY": 1,
+
+  "//": "Lines below borrowed from tt-setup-tools generated config_merged.json",
+  "//STD_CELL_LIBRARY": "gf180mcu_fd_sc_mcu9t5v0", "//": "Can modify for 9T instead of 7T cells. Remember to update lines below.",
+  "VDD_PIN_VOLTAGE": 3.3,
+  "LIB_SYNTH": "pdk_dir::libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__tt_025C_3v30.lib",
+  "LIB_FASTEST": "pdk_dir::libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__ff_n40C_3v60.lib",
+  "LIB_SLOWEST": "pdk_dir::libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__ss_125C_3v00.lib",
+  "DEFAULT_CORNER": "nom_tt_025C_3v30",
+  "STA_CORNERS": [
+    "nom_tt_025C_3v30",
+    "nom_ss_125C_3v00",
+    "nom_ff_n40C_3v60",
+    "min_tt_025C_3v30",
+    "min_ss_125C_3v00",
+    "min_ff_n40C_3v60",
+    "max_tt_025C_3v30",
+    "max_ss_125C_3v00",
+    "max_ff_n40C_3v60"
+  ],
+  "LIB": {
+    "*_tt_025C_3v30": ["pdk_dir::libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__tt_025C_3v30.lib"],
+    "*_ss_125C_3v00": ["pdk_dir::libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__ss_125C_3v00.lib"],
+    "*_ff_n40C_3v60": ["pdk_dir::libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__ff_n40C_3v60.lib"]
+  },
+
+  "//": "Some stuff we don't need for now, kept as an example...",
+  "//PNR_SDC_FILE": "dir::project.sdc",
+  "//SIGNOFF_SDC_FILE": "dir::project.sdc",
+  "//EXTRA_EXCLUDED_CELLS": ["sg13g2_sdfbbp_1"],
+  "//RSZ_DONT_TOUCH_RX": "notouch_",
+  "//": "//"
+}
