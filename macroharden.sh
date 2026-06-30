@@ -3,6 +3,12 @@
 if [ -z "$VIRTUAL_ENV" ]; then echo "VENV is not loaded. Did you remember to run: source ./env-gf.sh"; exit 1; fi
 if [ -z "$PDK_ROOT"    ]; then echo "PDK_ROOT isn't set. Did you remember to run: source ./env-gf.sh"; exit 1; fi
 
+if [ -z "$1" ]; then
+    export HARDENCONFIG="librelane/digital/config.json"
+else
+    export HARDENCONFIG="$1"
+fi
+
 rm -rf librelane/runs/manual
 mkdir -p librelane/runs/manual
 
@@ -14,7 +20,7 @@ python -m librelane \
     --pdk "$PDK" \
     --run-tag manual \
     --force-run-dir librelane/runs/manual \
-    librelane/digital/config.json
+    "$HARDENCONFIG"
 #   --design-dir .
 
 #NOTE: When I last ran the above, the actual command-line it launched was:

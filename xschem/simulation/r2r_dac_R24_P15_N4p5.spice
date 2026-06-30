@@ -1,0 +1,64 @@
+** sch_path: /home/anton/projects/ttgf0p3-algofoogle-analog/xschem/r2r_dac_R24_P15_N4p5.sch
+.subckt r2r_dac_R24_P15_N4p5 VGND aout dn[8] dn[7] dn[6] dn[5] dn[4] dn[3] dn[2] dn[1] dn[0] VPWR
+*.PININFO VGND:B aout:O dn[8:0]:I VPWR:B
+x1 dn[8] dn[7] dn[6] dn[5] dn[4] dn[3] dn[2] dn[1] dn[0] VPWR VGND aout r2r_dac_param rlength=24u pfetw=15u nfetw=4.5u
+.ends
+
+* expanding   symbol:  r2r_dac_param.sym # of pins=4
+** sym_path: /home/anton/projects/ttgf0p3-algofoogle-analog/xschem/r2r_dac_param.sym
+** sch_path: /home/anton/projects/ttgf0p3-algofoogle-analog/xschem/r2r_dac_param.sch
+.subckt r2r_dac_param dn[8] dn[7] dn[6] dn[5] dn[4] dn[3] dn[2] dn[1] dn[0] VPWR VGND aout  rlength=24u pfetw=15u nfetw=4.5u
+*.PININFO VGND:B aout:O dn[8:0]:I VPWR:B
+XR0a wi0 dd[0] VGND ppolyf_u_1k r_width=1u r_length={rlength}
+XR0b wJ0 wi0 VGND ppolyf_u_1k r_width=1u r_length={rlength}
+XR0c wJ0 wg0 VGND ppolyf_u_1k r_width=1u r_length={rlength}
+XR0d wg0 VGND VGND ppolyf_u_1k r_width=1u r_length={rlength}
+XR1a wi1 dd[1] VGND ppolyf_u_1k r_width=1u r_length={rlength}
+XR1b wJ1 wi1 VGND ppolyf_u_1k r_width=1u r_length={rlength}
+XR1c wJ1 wJ0 VGND ppolyf_u_1k r_width=1u r_length={rlength}
+XR2a wi2 dd[2] VGND ppolyf_u_1k r_width=1u r_length={rlength}
+XR2b wJ2 wi2 VGND ppolyf_u_1k r_width=1u r_length={rlength}
+XR2c wJ2 wJ1 VGND ppolyf_u_1k r_width=1u r_length={rlength}
+XR3a wi3 dd[3] VGND ppolyf_u_1k r_width=1u r_length={rlength}
+XR3b wJ3 wi3 VGND ppolyf_u_1k r_width=1u r_length={rlength}
+XR3c wJ3 wJ2 VGND ppolyf_u_1k r_width=1u r_length={rlength}
+XR4a wi4 dd[4] VGND ppolyf_u_1k r_width=1u r_length={rlength}
+XR4b wJ4 wi4 VGND ppolyf_u_1k r_width=1u r_length={rlength}
+XR4c wJ4 wJ3 VGND ppolyf_u_1k r_width=1u r_length={rlength}
+XR5a wi5 dd[5] VGND ppolyf_u_1k r_width=1u r_length={rlength}
+XR5b wJ5 wi5 VGND ppolyf_u_1k r_width=1u r_length={rlength}
+XR5c wJ5 wJ4 VGND ppolyf_u_1k r_width=1u r_length={rlength}
+XR6a wi6 dd[6] VGND ppolyf_u_1k r_width=1u r_length={rlength}
+XR6b wJ6 wi6 VGND ppolyf_u_1k r_width=1u r_length={rlength}
+XR6c wJ6 wJ5 VGND ppolyf_u_1k r_width=1u r_length={rlength}
+XR7a wi7 dd[7] VGND ppolyf_u_1k r_width=1u r_length={rlength}
+XR7b wJ7 wi7 VGND ppolyf_u_1k r_width=1u r_length={rlength}
+XR7c wJ7 wJ6 VGND ppolyf_u_1k r_width=1u r_length={rlength}
+XR8a wi8 dd[8] VGND ppolyf_u_1k r_width=1u r_length={rlength}
+XR8b aout wi8 VGND ppolyf_u_1k r_width=1u r_length={rlength}
+XR8c aout wJ7 VGND ppolyf_u_1k r_width=1u r_length={rlength}
+XRdummy1 VGND VGND VGND ppolyf_u_1k r_width=1u r_length={rlength}
+XRdummy2 VGND VGND VGND ppolyf_u_1k r_width=1u r_length={rlength}
+xdd0 VPWR VGND dd[0] dn[0] inv_param pfetw={pfetw} nfetw={nfetw}
+xdd1 VPWR VGND dd[1] dn[1] inv_param pfetw={pfetw} nfetw={nfetw}
+xdd2 VPWR VGND dd[2] dn[2] inv_param pfetw={pfetw} nfetw={nfetw}
+xdd3 VPWR VGND dd[3] dn[3] inv_param pfetw={pfetw} nfetw={nfetw}
+xdd4 VPWR VGND dd[4] dn[4] inv_param pfetw={pfetw} nfetw={nfetw}
+xdd5 VPWR VGND dd[5] dn[5] inv_param pfetw={pfetw} nfetw={nfetw}
+xdd6 VPWR VGND dd[6] dn[6] inv_param pfetw={pfetw} nfetw={nfetw}
+xdd7 VPWR VGND dd[7] dn[7] inv_param pfetw={pfetw} nfetw={nfetw}
+xdd8 VPWR VGND dd[8] dn[8] inv_param pfetw={pfetw} nfetw={nfetw}
+.ends
+
+
+* expanding   symbol:  inv_param.sym # of pins=4
+** sym_path: /home/anton/projects/ttgf0p3-algofoogle-analog/xschem/inv_param.sym
+** sch_path: /home/anton/projects/ttgf0p3-algofoogle-analog/xschem/inv_param.sch
+.subckt inv_param VCC VSS Y A  pfetw=15u nfetw=4.5u
+*.PININFO VCC:B VSS:B A:I Y:O
+XMNi Y A VSS VSS nfet_03v3 L=0.28u W={nfetw} nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0
+XMPi Y A VCC VCC pfet_03v3 L=0.28u W={pfetw} nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0
+.ends
+
