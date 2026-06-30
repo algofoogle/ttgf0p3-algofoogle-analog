@@ -14,3 +14,4 @@ JUNK/*
 .*~
 xschem/simulation/*.raw
 xschem/*.png
+tt/

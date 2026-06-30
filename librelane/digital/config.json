@@ -2,7 +2,7 @@
   "//": "This is the 7T (standard cell height and speed) version",
   "DESIGN_NAME": "digital",
   "VERILOG_FILES": [
-    "dir::../../verilog/rtl/digital.v"
+    "dir::../../verilog/rtl/digital/digital.v"
   ],
   "PL_TARGET_DENSITY_PCT": 40,
   "CLOCK_PORT": "vco_in",
