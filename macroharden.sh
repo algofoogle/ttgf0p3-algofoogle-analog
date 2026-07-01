@@ -16,7 +16,7 @@ export MACRONAME="$1"
 if [ -z "$2" ]; then
     export HARDENCONFIG="librelane/$MACRONAME/config.json"
 else
-    export HARDENCONFIG="$1"
+    export HARDENCONFIG="$2"
 fi
 
 rm -rf librelane/runs/$MACRONAME

@@ -1,0 +1,66 @@
+** tb_clkdiv.spice
+
+.param vcc=3.3
+
+Vvcc VCC GND PWL(0ns 0v  1ns 0v  2ns {vcc})
+* Vrst rst_n GND 3.3
+*Vvin VIN GND PWL(0us 0.0v 0.1us 0.0v 2us 0.55v 10us 0.55v 15us 0.65v 50us 3.3v 51us 3.3v)
+* Vvin VIN GND PWL(0us 0.0v   0.1us 0.0v   1us 3.0v   2us 3.0v   3us 3.3v   4us 3.3v   20us 0.55v   25us 0.55v)
+* Vvin VIN GND PWL(
+* + 0.0us 0.0v    0.1us 0.0v
+* + 1.0us 3.0v    1.5us 3.0v
+* + 2.0us 1.4v    3.0us 1.4v
+* + 3.5us 2.8v    4.5us 2.8v
+* + 5.0us 3.3v    6.0us 3.3v
+* + 6.5us 0.7v   10.0us 0.7v
+* + )
+* Rvin_pex vin_pex VIN 10k
+Rvcc_pex vcc_pex VCC 10
+Rgnd_pex GND gnd_pex 10
+
+**** begin user architecture code
+
+.include /home/anton/ttsetup@ttgf26a/pdk/gf180mcuD/libs.tech/ngspice/design.ngspice
+.lib /home/anton/ttsetup@ttgf26a/pdk/gf180mcuD/libs.tech/ngspice/sm141064.ngspice typical
+.lib /home/anton/ttsetup@ttgf26a/pdk/gf180mcuD/libs.tech/ngspice/sm141064.ngspice res_typical
+* .lib /home/anton/ttsetup@ttgf26a/pdk/gf180mcuD/libs.tech/ngspice/sm141064.ngspice res_statistical
+.include ../../magic/clkdiv.sim.spice
+* .include ttgf_analog_pin.spice
+
+
+.param avidelay=150n
+.param dvidelay=400n
+Vavi ana_vco_in GND pulse 0v {vcc} {avidelay} 0.5n 0.5n 2n 5n
+Vdvi dac_vco_in GND pulse 0v {vcc} {dvidelay} 0.2n 0.2n 1n 2.5n
+
+
+* * Reset pulse: Start unasserted for 10ns, then assert for 80ns, then release for rest of the sim.
+* Vreset  rst_n  GND PULSE {vcc} 0v 30n 1n 1n    80n    34m
+
+
+
+XDUT vcc_pex gnd_pex
++ ana_vco_in    avo[0] avo[1] avo[2] avo[3] avo[4] avo[5]
++ dac_vco_in    dvo[0] dvo[1] dvo[2] dvo[3] dvo[4] dvo[5]
++ uio_oe[0] uio_oe[1] uio_oe[2] uio_oe[3] uio_oe[4] uio_oe[5] uio_oe[6] uio_oe[7]
++ clkdiv_parax
+
+*.options savecurrents
+.control
+save i(Vvcc)
++ @Rvcc_pex[i] @Rvin_pex[i] vcc_pex gnd_pex 
++ ana_vco_in    avo[0] avo[1] avo[2] avo[3] avo[4] avo[5]
++ dac_vco_in    dvo[0] dvo[1] dvo[2] dvo[3] dvo[4] dvo[5]
+
+tran 20p 2us
+write tb_clkdiv.raw
+* plot vin_pex*10 "ua[1]"+4 XDUT.rxdigbuf1.Y+4 ua1_tile+4 XDUT.ua1buf0.A+4 "uio_out[0]"+8 "uio_out[1]"+12 "uio_out[2]"+16 "uio_out[3]"+20 "uio_out[4]"+24 "uio_out[5]"+28
+plot ana_vco_in "avo[0]"+4 "avo[1]"+8 "avo[2]"+12 "avo[3]"+16 "avo[4]"+20 "avo[5]"+24
+plot dac_vco_in "dvo[0]"+4 "dvo[1]"+8 "dvo[2]"+12 "dvo[3]"+16 "dvo[4]"+20 "dvo[5]"+24
+
+.endc
+
+**** end user architecture code
+**.ends
+
+.end
