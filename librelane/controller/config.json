@@ -37,6 +37,7 @@
   "FP_IO_VLENGTH": 1,
   "IO_PIN_V_LAYER": "Metal4",
   "FP_PDN_VPITCH": 38.87,
+  "FP_PDN_VOFFSET": 15.3,
   "FP_PDN_MULTILAYER": 0,
   "RT_MAX_LAYER": "Metal4",
   "MAGIC_DEF_LABELS": 0,
