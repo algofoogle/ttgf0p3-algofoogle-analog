@@ -54,6 +54,7 @@ MACRO tt_um_algofoogle_gf_analog
   PIN ua[2]
     DIRECTION INOUT ;
     USE SIGNAL ;
+    ANTENNAGATEAREA 21.000000 ;
     PORT
       LAYER Metal4 ;
         RECT 238.460 0.000 241.460 1.000 ;
@@ -62,6 +63,7 @@ MACRO tt_um_algofoogle_gf_analog
   PIN ua[3]
     DIRECTION INOUT ;
     USE SIGNAL ;
+    ANTENNADIFFAREA 3.120000 ;
     PORT
       LAYER Metal4 ;
         RECT 194.780 0.000 197.780 1.000 ;

@@ -1,0 +1,145 @@
+* NGSPICE file created from vco_combo.ext - technology: gf180mcuD
+
+.subckt csrostage VCC VbiasP VSS VbiasN A Y
+X0 a_280_590# VbiasP VCC VCC pfet_03v3 ad=0.59348p pd=4.36957u as=1.5p ps=7u w=3u l=0.3u
+**devattr s=132000,1640 d=18200,670
+X1 Y A a_280_250# VSS nfet_03v3 ad=0.4p pd=2.6u as=0.14857p ps=1.31429u w=0.8u l=0.4u
+**devattr s=5200,230 d=16000,520
+X2 a_280_250# VbiasN VSS VSS nfet_03v3 ad=0.11143p pd=0.98571u as=0.3p ps=2.2u w=0.6u l=0.3u
+**devattr s=26400,680 d=5200,230
+X3 Y A a_280_590# VCC pfet_03v3 ad=0.8p pd=4.2u as=0.31652p ps=2.33043u w=1.6u l=0.4u
+**devattr s=18200,670 d=32000,840
+.ends
+
+.subckt bufinv A Y VSS VCC
+X0 Y A VCC VCC pfet_03v3 ad=1.04p pd=5.04u as=1p ps=5u w=2u l=0.28u
+**devattr s=80000,1200 d=41600,1008
+X1 Y A VSS VSS nfet_03v3 ad=0.52p pd=3.04u as=0.5p ps=3u w=1u l=0.28u
+**devattr s=34000,800 d=20800,608
+.ends
+
+.subckt nfet_03v3_KT5AJW a_n52_n500# a_296_n592# a_680_n500# a_52_n592# a_n540_n500#
++ a_n436_n592# a_540_n592# a_n192_n592# a_n906_n686# a_436_n500# a_192_n500# a_n768_n500#
++ a_n680_n592# a_n296_n500#
+X0 a_436_n500# a_296_n592# a_192_n500# a_n906_n686# nfet_03v3 ad=1.3p pd=5.52u as=1.3p ps=5.52u w=5u l=0.7u
+**devattr s=52000,1104 d=52000,1104
+X1 a_680_n500# a_540_n592# a_436_n500# a_n906_n686# nfet_03v3 ad=2.2p pd=10.88u as=1.3p ps=5.52u w=5u l=0.7u
+**devattr s=52000,1104 d=88000,2176
+X2 a_192_n500# a_52_n592# a_n52_n500# a_n906_n686# nfet_03v3 ad=1.3p pd=5.52u as=1.3p ps=5.52u w=5u l=0.7u
+**devattr s=52000,1104 d=52000,1104
+X3 a_n52_n500# a_n192_n592# a_n296_n500# a_n906_n686# nfet_03v3 ad=1.3p pd=5.52u as=1.3p ps=5.52u w=5u l=0.7u
+**devattr s=52000,1104 d=52000,1104
+X4 a_n296_n500# a_n436_n592# a_n540_n500# a_n906_n686# nfet_03v3 ad=1.3p pd=5.52u as=1.3p ps=5.52u w=5u l=0.7u
+**devattr s=52000,1104 d=52000,1104
+X5 a_n540_n500# a_n680_n592# a_n768_n500# a_n906_n686# nfet_03v3 ad=1.3p pd=5.52u as=2.2p ps=10.88u w=5u l=0.7u
+**devattr s=88000,2176 d=52000,1104
+.ends
+
+.subckt ppolyf_u_1k_ACAPAA a_40_n622# a_40_500# a_n240_n622# a_n240_500# a_n452_n834#
+X0 a_40_500# a_40_n622# a_n452_n834# ppolyf_u_1k r_width=1u r_length=5u
+X1 a_n240_500# a_n240_n622# a_n452_n834# ppolyf_u_1k r_width=1u r_length=5u
+.ends
+
+.subckt csringosc vin VCC VSS vbiasp vbiasn osc_raw osc_out
+Xx1 VCC vbiasp VSS vbiasn osc_raw x2/A csrostage
+Xx2 VCC vbiasp VSS vbiasn x2/A x3/A csrostage
+Xx3 VCC vbiasp VSS vbiasn x3/A x4/A csrostage
+Xx4 VCC vbiasp VSS vbiasn x4/A x5/A csrostage
+Xx5 VCC vbiasp VSS vbiasn x5/A osc_raw csrostage
+Xx6 osc_raw x7/A VSS VCC bufinv
+Xx7 x7/A osc_out VSS VCC bufinv
+XXMNc vbiasp vin m1_n2680_1360# vin vbiasp vin vin vin VSS vbiasp m1_n2680_1360# m1_n2680_1360#
++ vin m1_n2680_1360# nfet_03v3_KT5AJW
+XXR1a2 m1_n2960_160# m1_n2680_1360# m1_n2960_160# VSS VSS ppolyf_u_1k_ACAPAA
+X0 VSS vbiasn vbiasn VSS nfet_03v3 ad=0.3p pd=2.2u as=0.3p ps=2.2u w=0.6u l=0.3u
+**devattr s=12000,440 d=12000,440
+X1 vbiasn vbiasp VCC VCC pfet_03v3 ad=1.5p pd=7u as=1.02p ps=3.96u w=3u l=0.3u
+**devattr s=47600,924 d=60000,1400
+X2 VCC vbiasp vbiasp VCC pfet_03v3 ad=1.36p pd=5.28u as=2p ps=9u w=4u l=0.28u
+**devattr s=80000,1800 d=47600,924
+.ends
+
+.subckt inv_P15_N4p5 A Y VSS VCC
+X0 VCC A Y VCC pfet_03v3 ad=3.825p pd=16.02u as=2.1375p ps=8.07u w=7.5u l=0.28u
+**devattr s=85500,1614 d=156000,3208
+X1 Y A VCC VCC pfet_03v3 ad=2.1375p pd=8.07u as=3.825p ps=16.02u w=7.5u l=0.28u
+**devattr s=300000,3400 d=85500,1614
+X2 Y A VSS VSS nfet_03v3 ad=0.64125p pd=2.82u as=1.1475p ps=5.52u w=2.25u l=0.28u
+**devattr s=84000,1300 d=25650,564
+X3 VSS A Y VSS nfet_03v3 ad=1.1475p pd=5.52u as=0.64125p ps=2.82u w=2.25u l=0.28u
+**devattr s=25650,564 d=46800,1108
+.ends
+
+.subckt ppolyf_u_1k_FZFC8D a_40_n2522# a_n2480_2400# a_n1920_2400# a_600_n2522# a_3400_2400#
++ a_2840_2400# a_n1360_n2522# a_n3320_2400# a_n2760_2400# a_3680_2400# a_n2480_n2522#
++ a_n3040_n2522# a_n4160_2400# a_40_2400# a_n3600_2400# a_n4160_n2522# a_3960_2400#
++ a_320_2400# a_n800_n2522# a_2000_n2522# a_1440_n2522# a_n3880_2400# a_2560_n2522#
++ a_3120_n2522# a_3680_n2522# a_600_2400# a_n1640_n2522# a_880_2400# a_n240_2400#
++ a_n2200_n2522# a_n240_n2522# a_n2760_n2522# a_n3320_n2522# a_n3880_n2522# a_n520_2400#
++ a_n4372_n2734# a_1160_2400# a_n1080_2400# a_1720_n2522# a_320_n2522# a_880_n2522#
++ a_n1080_n2522# a_3400_n2522# a_2840_n2522# a_2000_2400# a_n800_2400# a_3960_n2522#
++ a_1440_2400# a_n1360_2400# a_2280_2400# a_n1920_n2522# a_1720_2400# a_1160_n2522#
++ a_n520_n2522# a_n1640_2400# a_n2200_2400# a_n3600_n2522# a_3120_2400# a_2560_2400#
++ a_2280_n2522# a_n3040_2400#
+X0 a_1440_2400# a_1440_n2522# a_n4372_n2734# ppolyf_u_1k r_width=1u r_length=24u
+X1 a_3960_2400# a_3960_n2522# a_n4372_n2734# ppolyf_u_1k r_width=1u r_length=24u
+X2 a_n3040_2400# a_n3040_n2522# a_n4372_n2734# ppolyf_u_1k r_width=1u r_length=24u
+X3 a_n520_2400# a_n520_n2522# a_n4372_n2734# ppolyf_u_1k r_width=1u r_length=24u
+X4 a_n3600_2400# a_n3600_n2522# a_n4372_n2734# ppolyf_u_1k r_width=1u r_length=24u
+X5 a_n1080_2400# a_n1080_n2522# a_n4372_n2734# ppolyf_u_1k r_width=1u r_length=24u
+X6 a_2280_2400# a_2280_n2522# a_n4372_n2734# ppolyf_u_1k r_width=1u r_length=24u
+X7 a_n3320_2400# a_n3320_n2522# a_n4372_n2734# ppolyf_u_1k r_width=1u r_length=24u
+X8 a_1720_2400# a_1720_n2522# a_n4372_n2734# ppolyf_u_1k r_width=1u r_length=24u
+X9 a_n3880_2400# a_n3880_n2522# a_n4372_n2734# ppolyf_u_1k r_width=1u r_length=24u
+X10 a_n1360_2400# a_n1360_n2522# a_n4372_n2734# ppolyf_u_1k r_width=1u r_length=24u
+X11 a_2000_2400# a_2000_n2522# a_n4372_n2734# ppolyf_u_1k r_width=1u r_length=24u
+X12 a_n4160_2400# a_n4160_n2522# a_n4372_n2734# ppolyf_u_1k r_width=1u r_length=24u
+X13 a_2560_2400# a_2560_n2522# a_n4372_n2734# ppolyf_u_1k r_width=1u r_length=24u
+X14 a_n2200_2400# a_n2200_n2522# a_n4372_n2734# ppolyf_u_1k r_width=1u r_length=24u
+X15 a_n1640_2400# a_n1640_n2522# a_n4372_n2734# ppolyf_u_1k r_width=1u r_length=24u
+X16 a_2840_2400# a_2840_n2522# a_n4372_n2734# ppolyf_u_1k r_width=1u r_length=24u
+X17 a_320_2400# a_320_n2522# a_n4372_n2734# ppolyf_u_1k r_width=1u r_length=24u
+X18 a_n2480_2400# a_n2480_n2522# a_n4372_n2734# ppolyf_u_1k r_width=1u r_length=24u
+X19 a_n1920_2400# a_n1920_n2522# a_n4372_n2734# ppolyf_u_1k r_width=1u r_length=24u
+X20 a_3120_2400# a_3120_n2522# a_n4372_n2734# ppolyf_u_1k r_width=1u r_length=24u
+X21 a_880_2400# a_880_n2522# a_n4372_n2734# ppolyf_u_1k r_width=1u r_length=24u
+X22 a_1160_2400# a_1160_n2522# a_n4372_n2734# ppolyf_u_1k r_width=1u r_length=24u
+X23 a_3680_2400# a_3680_n2522# a_n4372_n2734# ppolyf_u_1k r_width=1u r_length=24u
+X24 a_n240_2400# a_n240_n2522# a_n4372_n2734# ppolyf_u_1k r_width=1u r_length=24u
+X25 a_40_2400# a_40_n2522# a_n4372_n2734# ppolyf_u_1k r_width=1u r_length=24u
+X26 a_600_2400# a_600_n2522# a_n4372_n2734# ppolyf_u_1k r_width=1u r_length=24u
+X27 a_n2760_2400# a_n2760_n2522# a_n4372_n2734# ppolyf_u_1k r_width=1u r_length=24u
+X28 a_n800_2400# a_n800_n2522# a_n4372_n2734# ppolyf_u_1k r_width=1u r_length=24u
+X29 a_3400_2400# a_3400_n2522# a_n4372_n2734# ppolyf_u_1k r_width=1u r_length=24u
+.ends
+
+.subckt r2r_dac_R24_P15_N4p5 dn[0] dn[1] dn[2] dn[3] dn[4] dn[5] dn[6] dn[7] dn[8]
++ aout VPWR VGND
+XXdd0 dn[0] Xdd0/Y VGND VPWR inv_P15_N4p5
+XXdd1 dn[1] Xdd1/Y VGND VPWR inv_P15_N4p5
+XXdd2 dn[2] Xdd2/Y VGND VPWR inv_P15_N4p5
+XXdd3 dn[3] Xdd3/Y VGND VPWR inv_P15_N4p5
+XXdd4 dn[4] Xdd4/Y VGND VPWR inv_P15_N4p5
+XXdd5 dn[5] Xdd5/Y VGND VPWR inv_P15_N4p5
+XXdd7 dn[7] Xdd7/Y VGND VPWR inv_P15_N4p5
+XXdd6 dn[6] Xdd6/Y VGND VPWR inv_P15_N4p5
+XXdd8 dn[8] Xdd8/Y VGND VPWR inv_P15_N4p5
+Xppolyf_u_1k_FZFC8D_0 m1_4370_n3430# m1_1850_1540# m1_2410_1540# m1_4930_n3430# aout
++ m1_6890_1540# m1_2690_n3430# m1_730_1540# m1_730_1540# Xdd8/Y m1_1570_n3430# m1_1010_n3430#
++ VGND m1_4090_1540# m1_730_1540# VGND VGND Xdd4/Y m1_3250_n3430# m1_6050_n3430# m1_4930_n3430#
++ VGND m1_6610_n3430# m1_6610_n3430# m1_7730_n3430# m1_4090_1540# m1_2690_n3430# m1_5210_1540#
++ m1_4090_1540# Xdd1/Y m1_3250_n3430# m1_1570_n3430# m1_1010_n3430# m1_450_n3430#
++ m1_3530_1540# VGND m1_5210_1540# m1_2410_1540# m1_6050_n3430# m1_4370_n3430# m1_4930_n3430#
++ m1_3250_n3430# m1_7730_n3430# Xdd7/Y Xdd6/Y m1_3530_1540# VGND m1_5770_1540# Xdd2/Y
++ m1_5770_1540# m1_1570_n3430# m1_5770_1540# Xdd5/Y Xdd3/Y m1_2410_1540# m1_1850_1540#
++ m1_450_n3430# aout m1_6890_1540# m1_6610_n3430# Xdd0/Y ppolyf_u_1k_FZFC8D
+.ends
+
+.subckt vco_combo VPWR dn[0] dn[1] dn[2] dn[3] dn[4] dn[5] dn[6] dn[7] dn[8] vco_osc
++ VGND vco_vin
+Xcsringosc_0 vco_vin VPWR VGND csringosc_0/vbiasp csringosc_0/vbiasn csringosc_0/osc_raw
++ vco_osc csringosc
+Xr2r_dac_0 dn[0] dn[1] dn[2] dn[3] dn[4] dn[5] dn[6] dn[7] dn[8] vco_vin VPWR VGND
++ r2r_dac_R24_P15_N4p5
+.ends
+
