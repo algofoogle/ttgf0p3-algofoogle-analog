@@ -1,7 +1,7 @@
 magic
 tech gf180mcuD
 magscale 1 5
-timestamp 1783007850
+timestamp 1783009731
 << metal1 >>
 rect 14585 21750 14695 21755
 rect 14585 21600 14590 21750
@@ -1014,6 +1014,10 @@ use bufinv_2  dvtxb1
 timestamp 1781873886
 transform -1 0 16100 0 -1 8200
 box -15 -30 235 840
+use m4screen  m4screen_0
+timestamp 1783009610
+transform 1 0 15160 0 1 7290
+box 0 0 6090 4440
 use bufinv_2  rxdigbuf0
 timestamp 1781873886
 transform 0 1 13880 1 0 20725

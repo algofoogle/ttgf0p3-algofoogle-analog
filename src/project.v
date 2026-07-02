@@ -23,7 +23,43 @@ module tt_um_algofoogle_gf_analog (
     wire vco_out; // Weakly buffered output from main VCO block.
     wire vco_in; // Buffered VCO output, going into the digital block.
 
-    wire vin = ua[0]; // VCO control voltage.
+    wire vin = ua[0]; // Analog VCO control voltage.
+
+    // Main VGA control block ("slow" 25MHz domain), and DAC driver interface:
+    wire [8:0] dacn;
+    controller controller_0 (
+        .VDD        (VDPWR),
+        .VSS        (VGND),
+        .clk        (clk),
+        .rst_n      (rst_n),
+        .ui_in      (ui_in),
+        .uio_in     (uio_in),
+        .uo_out     (uo_out),
+        .dacn       (dacn)
+    );
+
+    // DAC-driven VCO, with output buffers going to dac_vco_in and ua[3].
+    wire dac_vco_osc;
+    vco_combo vco_combo_0 (
+        .VPWR       (VDPWR),
+        .VGND       (VGND),
+        .dn         (dacn),
+        .vco_osc    (dac_vco_osc),
+        .vco_vin    (ua[2])
+    );
+    bufinv_2 dvtxb0 (
+        .VCC        (VDPWR),
+        .VSS        (VGND),
+        .A          (dac_vco_osc),
+        .Y          (dac_vco_in)
+    );
+    bufinv_2 dvtxb1 (
+        .VCC        (VDPWR),
+        .VSS        (VGND),
+        .A          (dac_vco_in),
+        .Y          (ua[3])
+    );
+
 
     digital digital_0 (
         .VDD        (VDPWR),
@@ -54,7 +90,7 @@ module tt_um_algofoogle_gf_analog (
     );
 
     // Also buffer vco_out and send it all the way across the tile
-    // to another buffer that drives the signal into the digital block:
+    // to another buffer that drives the signal into the clkdiv block:
     wire txdigbuf_mid;
     wire vco_tx;
     wire rxdigbuf_mid;
