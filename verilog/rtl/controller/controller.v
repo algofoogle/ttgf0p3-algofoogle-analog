@@ -13,6 +13,8 @@ module controller(
     output  [8:0]   dacn // DAC internally needs complementary outputs (hence 'n').
 );
 
+    wire test_mode = ui_in[6];
+
     // DAC set to 256 (/512) should get close to 1.65V which
     // should make the VCO oscillate near 205MHz:
     localparam [8:0] DAC_DEFAULT = 9'b1_0000_0000;
@@ -49,6 +51,7 @@ module controller(
     wire [9:0] h;
     wire [9:0] v;
     wire visible;
+    wire hmax;
 
     vga_sync vga_sync (
         .clk        (clk),
@@ -58,19 +61,19 @@ module controller(
         .o_vsync    (vsync),
         .o_hpos     (h),
         .o_vpos     (v),
-        // .o_hmax     (),
+        .o_hmax     (hmax), // End of line?
         // .o_vmax     (),
         // .o_vblank   (),
         // .o_hblank   (),
         .o_visible  (visible)
     );
 
-    wire in_dac_debug = (v < 4) && (h < (9*4));
+    wire in_dac_debug = (v < 16) && (h < (9*16));
 
     // {Rr,Gg,Bb} order:
     wire [5:0] rgb_unreg = 
-        // Debug: 9 DAC bits are exposed as black and white 4x4 squares, with grey dividing lines:
-        in_dac_debug    ?   ((h[1:0]==0) ? 6'b01_01_01 : {{6}{dac[8-h]}}) : 
+        // Debug: 9 DAC bits are exposed as black and white 16x16 squares, with grey dividing lines:
+        in_dac_debug    ?   ((h[3:2]==0) ? 6'b01_01_01 : {{6}{dac[8-h[9:4]]}}) : 
         // Simple XOR colour pattern otherwise:
                             (h[5:0] ^ v[5:0]);
 
@@ -80,6 +83,7 @@ module controller(
         .load       (dac_load),
         .shift      (dac_shift),
         .data_in    (dac_data),
+        .dac_inc    (test_mode && hmax),
         .dac_out    (dac)
     );
 
@@ -107,6 +111,7 @@ module dac_loader #(
     input               load,
     input               shift,
     input       [2:0]   data_in,
+    input               dac_inc,
     output  reg [8:0]   dac_out
 );
     reg [5:0] dac_buf; // Only need to buffer 6 bits of 9.
@@ -145,11 +150,14 @@ module dac_loader #(
         // host would just need to do an extra dummy shift
         // if it plans on keeping "load" asserted.
         
-        // "dac_out": set default value on reset, or reg new data on 3rd shift:
+        // "dac_out": set default value on reset, or reg new data on 3rd shift,
+        // or increment if dac_inc is set:
         if (reset)
             dac_out <= DAC_DEFAULT;
         else if (load_active && shift_rise && final_load)
             dac_out <= dac_temp;
+        else if (dac_inc)
+            dac_out <= dac_out + 1;
         
     end
 

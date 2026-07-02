@@ -52,7 +52,7 @@ Rin2 GND ui_in[2] 1k
 Rin3 GND ui_in[3] 1k
 Rin4 GND ui_in[4] 1k
 Rin5 GND ui_in[5] 1k
-* Rin6 GND ui_in[6] 1k
+Rin6 VCC ui_in[6] 1k ; test_mode is high, allowing DAC output to increment each line.
 Rin7 GND ui_in[7] 1k
 
 
@@ -132,7 +132,7 @@ save i(vvcc)
 ** vbiasp         vbiasn         osc         osc_raw
 ** vbiasp_pex     vbiasn_pex     osc_pex     osc_raw_pex
 
-tran 50p 65us
+tran 50p 130us
 write tb_top.raw
 * plot vin_pex*10 "ua[1]"+4 XDUT.rxdigbuf1.Y+4 ua1_tile+4 XDUT.ua1buf0.A+4 "uio_out[0]"+8 "uio_out[1]"+12 "uio_out[2]"+16 "uio_out[3]"+20 "uio_out[4]"+24 "uio_out[5]"+28
 .endc
