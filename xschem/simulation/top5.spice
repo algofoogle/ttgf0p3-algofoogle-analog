@@ -1,0 +1,117 @@
+** top5.spice
+
+Vvcc VCC GND 3.3
+Vrst rst_n GND 3.3
+*Vvin VIN GND PWL(0us 0.0v 0.1us 0.0v 2us 0.55v 10us 0.55v 15us 0.65v 50us 3.3v 51us 3.3v)
+* Vvin VIN GND PWL(0us 0.0v   0.1us 0.0v   1us 3.0v   2us 3.0v   3us 3.3v   4us 3.3v   20us 0.55v   25us 0.55v)
+Vvin VIN GND PWL(
++ 0.0us 0.0v    0.1us 0.0v
++ 1.0us 3.0v    1.5us 3.0v
++ 2.0us 1.4v    3.0us 1.4v
++ 3.5us 2.8v    4.5us 2.8v
++ 5.0us 3.3v    6.0us 3.3v
++ 6.5us 0.7v   10.0us 0.7v
++ )
+Rvin_pex vin_pex VIN 10k
+Rvcc_pex vcc_pex VCC 10
+Rgnd_pex GND gnd_pex 10
+
+**** begin user architecture code
+
+.include /home/anton/ttsetup@ttgf26a/pdk/gf180mcuD/libs.tech/ngspice/design.ngspice
+.lib /home/anton/ttsetup@ttgf26a/pdk/gf180mcuD/libs.tech/ngspice/sm141064.ngspice typical
+.lib /home/anton/ttsetup@ttgf26a/pdk/gf180mcuD/libs.tech/ngspice/sm141064.ngspice res_typical
+* .lib /home/anton/ttsetup@ttgf26a/pdk/gf180mcuD/libs.tech/ngspice/sm141064.ngspice res_statistical
+.include ../../magic/tt_um_algofoogle_gf_analog5.sim.spice
+.include ttgf_analog_pin.spice
+
+
+*Rin0 ui_in[0] GND 1k
+*Rin1 ui_in[1] GND 1k
+*Rin2 ui_in[2] GND 1k
+*Rin3 ui_in[3] GND 1k
+*Rin4 ui_in[4] GND 1k
+*Rin5 ui_in[5] GND 1k
+*Rin6 ui_in[6] GND 1k
+*Rin7 ui_in[7] GND 1k
+*
+*Rbdin0 uio_in[0] GND 1k
+*Rbdin1 uio_in[1] GND 1k
+*Rbdin2 uio_in[2] GND 1k
+*Rbdin3 uio_in[3] GND 1k
+*Rbdin4 uio_in[4] GND 1k
+*Rbdin5 uio_in[5] GND 1k
+*Rbdin6 uio_in[6] GND 1k
+*Rbdin7 uio_in[7] GND 1k
+*
+*Rclk clk GND 1k
+*Rena ena GND 1k
+*
+*Rua2 ua[2] GND 1k
+*Rua3 ua[3] GND 1k
+*Rua4 ua[4] GND 1k
+*Rua5 ua[5] GND 1k
+*Rua6 ua[6] GND 1k
+*Rua7 ua[7] GND 1k
+*
+*Rout0 uo_out[0] GND 1Meg
+*Rout1 uo_out[1] GND 1Meg
+*Rout2 uo_out[2] GND 1Meg
+*Rout3 uo_out[3] GND 1Meg
+*Rout4 uo_out[4] GND 1Meg
+*Rout5 uo_out[5] GND 1Meg
+*Rout6 uo_out[6] GND 1Meg
+*Rout7 uo_out[7] GND 1Meg
+*
+*Roe0 uio_oe[0] GND 1Meg
+*Roe1 uio_oe[1] GND 1Meg
+*Roe2 uio_oe[2] GND 1Meg
+*Roe3 uio_oe[3] GND 1Meg
+*Roe4 uio_oe[4] GND 1Meg
+*Roe5 uio_oe[5] GND 1Meg
+*Roe6 uio_oe[6] GND 1Meg
+*Roe7 uio_oe[7] GND 1Meg
+*
+*Rbdout6 uio_out[6] GND 1Meg
+*Rbdout7 uio_out[7] GND 1Meg
+
+
+XDUT clk ena rst_n 
++    vin_pex   ua1_tile      ua[2]      ua[3]      ua[4]      ua[5]      ua[6]      ua[7]
++   ui_in[0]   ui_in[1]   ui_in[2]   ui_in[3]   ui_in[4]   ui_in[5]   ui_in[6]   ui_in[7]
++  uio_in[0]  uio_in[1]  uio_in[2]  uio_in[3]  uio_in[4]  uio_in[5]  uio_in[6]  uio_in[7]
++  uio_oe[0]  uio_oe[1]  uio_oe[2]  uio_oe[3]  uio_oe[4]  uio_oe[5]  uio_oe[6]  uio_oe[7]
++ uio_out[0] uio_out[1] uio_out[2] uio_out[3] uio_out[4] uio_out[5] uio_out[6] uio_out[7]
++  uo_out[0]  uo_out[1]  uo_out[2]  uo_out[3]  uo_out[4]  uo_out[5]  uo_out[6]  uo_out[7]
++ vcc_pex gnd_pex
++ tt_um_algofoogle_gf_analog5_parax
+
+* NOTE: ua1_tile is ua[1] as it comes directly out of the tile,
+* before going into the XUA1 pin model, and ultimately coming
+* back out again as the external 'ua[1]' (probably attenuated).
+XUA1
++ GND ua[1] ua1_tile
++ ttgf_analog_pin
+
+
+*.options savecurrents
+.control
+save i(Vvcc) i(Vvin) vin vin_pex
++ @Rvcc_pex[i] @Rvin_pex[i] vcc_pex gnd_pex 
++ ua[1] ua1_tile
++ uio_out[0] uio_out[1] uio_out[2] uio_out[3] uio_out[4] uio_out[5]
++ XDUT.rxdigbuf1.Y
++ XDUT.ua1buf0.A
+** uio_out[6] uio_out[7]
+** vbiasp         vbiasn         osc         osc_raw
+** vbiasp_pex     vbiasn_pex     osc_pex     osc_raw_pex
+
+tran 50p 10us
+write top5.raw
+* plot vin_pex*10 "ua[1]"+4 XDUT.rxdigbuf1.Y+4 ua1_tile+4 XDUT.ua1buf0.A+4 "uio_out[0]"+8 "uio_out[1]"+12 "uio_out[2]"+16 "uio_out[3]"+20 "uio_out[4]"+24 "uio_out[5]"+28
+.endc
+
+**** end user architecture code
+**.ends
+
+.end
