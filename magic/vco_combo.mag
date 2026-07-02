@@ -109,6 +109,7 @@ port 9 nsew
 flabel metal1 762 428 771 437 0 FreeSans 24 0 0 0 dn[8]
 port 10 nsew
 flabel metal3 734 -562 774 -545 0 FreeSans 32 180 0 0 vco_vin
+port 14 nsew
 flabel metal1 0 -431 14 -421 0 FreeSans 32 0 0 0 vco_osc
 port 11 nsew
 flabel metal1 0 190 27 217 0 FreeSans 64 0 0 0 VGND
