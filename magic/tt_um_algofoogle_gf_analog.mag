@@ -1,7 +1,7 @@
 magic
 tech gf180mcuD
 magscale 1 5
-timestamp 1782998647
+timestamp 1783004098
 << metal1 >>
 rect 14585 21750 14695 21755
 rect 14585 21600 14590 21750
@@ -1169,6 +1169,9 @@ flabel metal4 270 417 1470 31960 0 FreeSans 1200 90 0 0 VDPWR
 port 56 nsew power bidirectional
 flabel metal4 1640 417 2840 31960 0 FreeSans 1200 90 0 0 VGND
 port 64 nsew ground bidirectional
+flabel metal4 11435 22210 11495 22465 0 FreeSans 400 90 0 0 dac_vco_in
+flabel metal4 14125 21925 14190 22345 0 FreeSans 400 90 0 0 ana_vco_in
+flabel metal1 29145 2275 29200 2320 0 FreeSans 40 0 0 0 ana_osc_out
 << properties >>
 string FIXED_BBOX 0 0 34664 32536
 << end >>

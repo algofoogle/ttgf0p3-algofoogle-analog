@@ -1,0 +1,12 @@
+** sch_path: /home/anton/projects/ttgf0p3-algofoogle-analog/xschem/ttgf_analog_pin.sch
+.subckt ttgf_analog_pin VGND pin ua
+*.PININFO ua:B pin:B VGND:B
+R1 net1 pin 1
+C1 pin VGND 1p
+L1 net2 net1 1n
+R2 net3 net2 50
+R3 ua net3 100
+C2 net2 VGND 2p
+C3 net3 VGND 0.5p
+C4 ua VGND 0.5p
+.ends
